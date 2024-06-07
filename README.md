@@ -1,2 +1,2 @@
 # thenamewaseat.github.io
-test
+test https://thenamewaseat.github.io/
