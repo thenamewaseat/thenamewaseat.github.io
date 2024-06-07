@@ -1,0 +1,9 @@
+<html> 
+     <header> 
+         <link href='styles\dark.css'/> 
+         <link href='styles\light.css'/> 
+     </header> 
+     <body> 
+         test 
+     </body> 
+ </html> 
