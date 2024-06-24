@@ -1,0 +1,15 @@
+.flex1{
+    display:block;
+    width:100%;
+}
+.flex1>div{
+    width:50%;
+    line-height:200px;
+    text-align: center;
+    float:left;
+    background-color: #c7ebeb;
+}
+.Tgrid{
+    font-size: x-large;
+    font-weight: bold;
+}

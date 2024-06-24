@@ -2448,6 +2448,18 @@ body {
   border-bottom: 1px solid #e4ebf3;
   padding: 152px 30px 450px;
   position: relative;
+  animation:fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation{
+  0%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .container-2 {
@@ -2686,6 +2698,9 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     max-width: none;
+  }
+  .flex1 > div{
+    width:100%;
   }
 }
 

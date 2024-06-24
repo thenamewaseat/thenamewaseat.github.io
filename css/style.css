@@ -90,6 +90,9 @@
 .wrapper .twitter:hover .tooltip::before {
     background-color: #46c1f6;
     color: #ffffff;
+    .iconfab{
+        filter:invert(100%)
+    }
 }
 
 .wrapper .instagram:hover,
