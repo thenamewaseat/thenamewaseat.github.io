@@ -2444,10 +2444,9 @@ body {
 .hero-without-image {
   background-color: #f5f7fa;
   background-image: url("../images/tmpbnzadmea.png");
-  background-position: 0 0;
-  background-size: auto;
+  background-size:cover;
   border-bottom: 1px solid #e4ebf3;
-  padding: 152px 30px 354px;
+  padding: 152px 30px 450px;
   position: relative;
 }
 
@@ -2682,6 +2681,11 @@ body {
 
   .hero-wrapper-two {
     line-height: 50px;
+  }
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: none;
   }
 }
 
