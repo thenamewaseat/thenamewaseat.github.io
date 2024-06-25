@@ -6,7 +6,7 @@
     width:100%;
     grid-template-columns: 3fr 1fr;
     /*gap: 10px;*/
-    grid-template-rows: 50px;
+    grid-template-rows: max-content;
     grid-auto-rows: minmax(100px,auto);
     text-decoration: none;
 }
@@ -23,14 +23,18 @@
     grid-row:2;
 }
 .g3{
+    display: flex;
     grid-column: 2;
     grid-row-start:1;
+    align-items: center;
    /* grid-row-end:3;*/
 }
 .g4{
+    display: flex;
     grid-column: 2;
     grid-row-start:2;
-    background-color: aqua;
+    align-items: center;
+    background-color: #eaecec;
 }
 .g1,.g3{
     border-bottom: 1px solid #bbb;
