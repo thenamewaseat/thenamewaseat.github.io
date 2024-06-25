@@ -1,4 +1,4 @@
-.flex1{
+.flex1,.flex1>a,.flexfull>a{
     display:block;
 }
 .flex1>a{
