@@ -1,5 +1,6 @@
-.flex1,.flex1>a,.flexfull>a{
+.flex1,.flexfull,.flex1>a,.flexfull>a{
     display:block;
+    height: auto;
 }
 .flex1>a{
     width:50%;
@@ -14,47 +15,56 @@
     font-size: 180%;
     font-weight: bolder;
 }
-.flexfull{
-    display:block;
-}
+
 .flexfull>a{
     width:100%;
     line-height:200px;
     text-align: center;
-    float:left;
+    clear: left;
     color:white;
     text-decoration: none;
 }
 #f1{
-    top:50%;
     background: black url("../images/installation_thumbnail.jpg");
     background-size: cover;
     background-position: center;
+    transition:ease;
+    transition-duration: 0.5s;
 }
 #f2{
     background: black url("../images/Drawings_Thumbnail.jpg");
     background-size: cover;
     background-position: center;
+    transition:ease;
+    transition-duration: 0.5s;
 }
+
 #f3{
     background: black url("../images/photo_thumbnail.jpg");
     background-size: cover;
     background-position: center;
+    transition:ease;
+    transition-duration: 0.5s;
 }
 #f4{
     background: black url("../images/games_thumbnail.jpg");
     background-size: cover;
     background-position: center;
+    transition:ease;
+    transition-duration: 0.5s;
 }
 #f5{
     background: black url("../images/others_thumbnail.png");
     background-size: cover;
     background-position: center;
+    transition:ease;
+    transition-duration: 0.5s;
 }
 .Tgrid{
     background-color:rgba(0,0,0,0.4);
     backdrop-filter:blur(3px);
 }
+
 @media screen and (min-width: 767px) {
     #f1:hover{
         width:65%;
@@ -113,4 +123,56 @@
         
     }
 }
-
+@media screen and (max-width: 764px) {
+    .flex1>a{
+        width:100%;
+    }
+    #f1:hover{
+        transition:ease;
+        transition-duration: 0.5s;
+        ~a{
+            transition-duration: 0.5s;
+        }#g1{
+            backdrop-filter:blur(0px);
+        }
+    }
+    #f2:hover{
+        transition:ease;
+        transition-duration: 0.5s;
+        #g2{
+            backdrop-filter:blur(0px);
+        }
+        
+    }
+    #f1:has(+#f2:hover){
+        transition-duration: 0.5s;
+    }
+    #f3:hover{
+        transition:ease;
+        transition-duration: 0.5s;
+        ~a{
+            transition-duration: 0.5s;
+        }#g3{
+            backdrop-filter:blur(0px);
+        }
+    }
+    #f4:hover{
+        transition:ease;
+        transition-duration: 0.5s;
+        #g4{
+            backdrop-filter:blur(0px);
+        }
+        
+    }
+    #f3:has(+#f4:hover){
+        transition-duration: 0.5s;
+    }
+    #f5:hover{
+        #g5{
+            backdrop-filter:blur(0px);
+            transition:ease;
+            transition-duration: 0.5s;
+        }
+        
+    }
+}

@@ -2442,23 +2442,24 @@ body {
 }
 
 .hero-without-image {
-  background-color: #f5f7fa;
   background-image: url("../images/tmpbnzadmea.png");
   background-size:cover;
   border-bottom: 1px solid #e4ebf3;
   padding: 152px 30px 450px;
   position: relative;
-  animation:fadeInAnimation ease 3s;
+  animation:fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation{
   0%{
-    opacity: 0.2;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
   }
   100%{
-    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: darken;
   }
 }
 
@@ -2697,6 +2698,7 @@ body {
   .container {
     padding-left: 30px;
     padding-right: 30px;
+    margin-top: 30px;
     max-width: none;
   }
   .flex1 > div{
