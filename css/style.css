@@ -130,3 +130,15 @@ footer{
     padding-top:10px;
     padding-left: 1%;
 }
+
+.map{
+    width: 534px;
+    height: 850px;
+    overflow:hidden;
+    position: relative;
+}
+#map{
+    position: absolute;
+    top:-180px;
+    left:-620px;
+}
