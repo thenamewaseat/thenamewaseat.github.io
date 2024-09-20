@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display;=swap");
 .center{
     display:block;
     margin-left:auto;
@@ -9,7 +10,6 @@
     text-align: left;
     margin-left:auto;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display;=swap");
 
 .iconfab{
     width:100%;
@@ -142,3 +142,15 @@ footer{
     top:-180px;
     left:-620px;
 }
+html.lenis {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
