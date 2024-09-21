@@ -1,10 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display;=swap");
+@font-face {
+    font-family: 'MBForeverRaw';
+    src: url('../font/MBForeverRaw.ttf') format('truetype'),url('../font/MBForeverRaw.woff') format('woff');
+}
+p.rem1{
+    font-size: 1rem;
+}
+.header{
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(1rem);
+    z-index: 1;
+    position: sticky;
+    top:0px;
+}
+.header.scrolled{
+    box-shadow:2px 2px 9px rgba(177, 177, 177,0.3);
+
+}
 .center{
     display:block;
     margin-left:auto;
     margin-right:auto;
     position: relative;
     text-align: center;
+}
+.right{
+    display:block;
+    width:100%;
+    position: relative;
+    text-align: right;
 }
 .left{
     text-align: left;
@@ -18,7 +44,17 @@
     width:100vx;
     display: inline-flex;
 }
+.font1{
+    font-size: 7rem;
+    font-family: MBForeverRaw;
+    padding-bottom: 30px;
+}
+p.margin-bottom-24px{
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
 
+/*About Page*/
 .wrapper .icon {
     position: relative;
     background-color: #ffffff;
@@ -142,6 +178,8 @@ footer{
     top:-180px;
     left:-620px;
 }
+
+/*Universal scroll*/
 html.lenis {
     height: auto;
   }

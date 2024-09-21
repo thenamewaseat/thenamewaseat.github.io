@@ -5,6 +5,7 @@
     display: grid;
     width:100%;
     grid-template-columns: 3fr 1fr;
+    padding: 0px 16px 16px 16px;
     /*gap: 10px;*/
     grid-template-rows: max-content;
     grid-auto-rows: minmax(100px,auto);
@@ -36,9 +37,9 @@
     align-items: center;
     background-color: #eaecec;
 }
-.g1,.g3{
+/*.g1,.g3{
     border-bottom: 1px solid #bbb;
-}
+}*/
 div>p{
     padding-top: 5px;
 }
