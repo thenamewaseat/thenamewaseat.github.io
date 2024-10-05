@@ -2442,7 +2442,7 @@ body {
 }
 
 .hero-without-image {
-  background-image: url("../images/tmpbnzadmea.png");
+  /*background-image: url("../images/tmpbnzadmea.png");*/
   background-size:cover;
   border-bottom: 1px solid #e4ebf3;
   padding: 152px 30px 450px;

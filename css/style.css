@@ -3,6 +3,10 @@
     font-family: 'MBForeverRaw';
     src: url('../font/MBForeverRaw.ttf') format('truetype'),url('../font/MBForeverRaw.woff') format('woff');
 }
+
+
+
+
 p.rem1{
     font-size: 1rem;
 }
@@ -11,7 +15,7 @@ p.rem1{
     transition: box-shadow 0.3s ease;
     transition: transform 0.3s ease;
     backdrop-filter: blur(1rem);
-    z-index: 1;
+    z-index: 10;
     position: sticky;
     top:0px;
 }
@@ -32,6 +36,7 @@ p.rem1{
     position: relative;
     text-align: right;
 }
+
 .left{
     text-align: left;
     margin-left:auto;
@@ -52,6 +57,34 @@ p.rem1{
 p.margin-bottom-24px{
     font-size: 1.5rem;
     line-height: 1.2;
+}
+.blocks{
+    width: 100%;
+    height: 1500px;
+    background-color: rgba(255, 255, 255, 0.897);
+    backdrop-filter: blur(1rem);
+    margin-top: -88px;
+}
+
+@media screen and (max-width: 767px){
+    .right{
+        text-align: unset;
+    }
+    .font1{
+        font-size: 5rem;
+        padding-bottom: 10px;
+    }
+}
+
+/*spine2d*/
+#app{
+    background-image: url("../images/tmpbnzadmea.png");
+    width:100%;
+    height:95vh;
+    z-index: -1;
+    position: fixed;
+    top:0px;
+    overflow: hidden;
 }
 
 /*About Page*/
@@ -162,6 +195,7 @@ p.margin-bottom-24px{
 }
 
 footer{
+    background-color: #ffffff;
     display:block;
     padding-top:10px;
     padding-left: 1%;
@@ -192,3 +226,4 @@ html.lenis {
   .lenis.lenis-stopped {
     overflow: hidden;
   }
+  
