@@ -5,8 +5,9 @@
 }
 
 
-
-
+.nav-button-wrapper{
+    width:200px;
+}
 p.rem1{
     font-size: 1rem;
 }
@@ -71,7 +72,8 @@ p.margin-bottom-24px{
         text-align: unset;
     }
     .font1{
-        font-size: 5rem;
+        display:block;
+        font-size: 4rem;
         padding-bottom: 10px;
     }
 }
