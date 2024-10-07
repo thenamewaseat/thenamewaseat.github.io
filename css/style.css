@@ -3,7 +3,43 @@
     font-family: 'MBForeverRaw';
     src: url('../font/MBForeverRaw.ttf') format('truetype'),url('../font/MBForeverRaw.woff') format('woff');
 }
-
+.line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 2px; /* Line height */
+    background-color: #000;
+    transition: width 0.5s ease;
+    transform: translate(-50%, -50%);
+}
+.dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px; /* Dot size */
+    height: 20px;
+    background-color: #303030;
+    border-radius: 50%;
+    transition: width 0.5s ease, height 0.5s ease;
+    transform: translate(-50%, -50%);
+}
+.divider {
+    height:20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.scrolled .line {
+    width: 30%;
+}
+.scrolled .dot {
+    width: 0;
+    height: 0;
+}
 .margin-bottom-72px{
     margin-bottom: 72px;
 }

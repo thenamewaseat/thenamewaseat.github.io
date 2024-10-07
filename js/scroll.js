@@ -15,6 +15,7 @@ let lenis;
     requestAnimationFrame(raf);
     }
 
+    //show and hide navbar
     window.addEventListener('scroll', function() {
         const container = document.getElementById('header');
         if (window.scrollY > 0) {
@@ -38,4 +39,17 @@ let lenis;
             element.style.transform = "translate(0,0px)";
         }
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+
+    //scroll dot divider
+    window.addEventListener('scroll', () => {
+        const divider = document.querySelectorAll('.divider');
+        divider.forEach(divider => {
+            const rect = divider.getBoundingClientRect();
+            if (rect.top <= window.innerHeight*0.85 && rect.bottom >= 0) {
+                divider.classList.add('scrolled');
+            } else {
+                divider.classList.remove('scrolled');
+            }
+        });
     });
