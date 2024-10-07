@@ -1,3 +1,7 @@
+#table{
+    height:600px;
+}
+
 .flex1,.flexfull,.flex1>a,.flexfull>a{
     display:block;
     height: auto;
@@ -60,6 +64,13 @@
     transition:ease;
     transition-duration: 0.5s;
 }
+#f6{
+    background: black url("");
+    background-size: cover;
+    background-position: center;
+    transition:ease;
+    transition-duration: 0.5s;
+}
 .Tgrid{
     background-color:rgba(0,0,0,0.4);
     backdrop-filter:blur(3px);
@@ -114,16 +125,35 @@
         width:35%;
         transition-duration: 0.5s;
     }
+    #f6:hover{
+        width:65%;
+        transition:ease;
+        transition-duration: 0.5s;
+        ~a{
+            width:35%;
+            transition-duration: 0.5s;
+        }#g6{
+            backdrop-filter:blur(0px);
+        }
+    }
     #f5:hover{
+        width:65%;
+        transition:ease;
+        transition-duration: 0.5s;
         #g5{
             backdrop-filter:blur(0px);
-            transition:ease;
-            transition-duration: 0.5s;
         }
         
     }
+    #f6:has(+#f5:hover){
+        width:35%;
+        transition-duration: 0.5s;
+    }
 }
 @media screen and (max-width: 764px) {
+    #table{
+        height:1200px;
+    }
     .flex1>a{
         width:100%;
     }
@@ -174,5 +204,16 @@
             transition-duration: 0.5s;
         }
         
+    }
+    #f6:hover{
+        #g6{
+            backdrop-filter:blur(0px);
+            transition:ease;
+            transition-duration: 0.5s;
+        }
+        
+    }
+    #f6:has(+#f5:hover){
+        transition-duration: 0.5s;
     }
 }
