@@ -139,7 +139,7 @@ p.margin-bottom-24px{
 }
 .marquee__item {
     --marquee-item-offset: max(
-      calc(var(--marquee-item-width) * var(--marquee-items)),
+      calc(var(--marquee-item-width)* var(--marquee-items)),
       calc(100% + var(--marquee-item-width))
     );
     --marquee-delay: calc(var(--marquee-duration) / var(--marquee-items) * (var(--marquee-items) - var(--marquee-item-index)) * -1);
@@ -221,6 +221,12 @@ p.margin-bottom-24px{
     p.margin-bottom-24px{
         padding-left: 5%;
         padding-right: 5%;
+    }
+    .marquee img{
+        max-width: none;
+    }
+    .marquee--8 {
+        --marquee-duration: 48s;
     }
 }
 
