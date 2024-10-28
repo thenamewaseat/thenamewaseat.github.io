@@ -1,0 +1,42 @@
+#nav{
+    position: fixed;
+    bottom:0;
+    width:914px;
+    height:132px;
+    background-color:#88803f;
+    z-index: 5;
+}
+#homebg{
+    position: relative;
+    background-color: #d3d6a4;
+    width:100vw;
+    height:100vh;
+}
+#yellowblock{
+    bottom:0px;
+    right:0px;
+    background-color: #feffed;
+    position:absolute;
+    width:92%;
+    height:82%;
+}
+#blueblock{
+    background-color: #6cc8b5;
+    position:absolute;
+    height:100vh;
+    width:172px;
+    right:0px;
+}
+#human1{
+    position: relative;
+    width:100vw;
+    height:100vh;
+    margin-left:auto;
+    margin-right:auto;
+    img{
+        position: fixed;
+        left:auto;
+        right:auto;
+        bottom:0px;
+    }
+}

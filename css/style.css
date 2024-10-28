@@ -3,8 +3,25 @@
     font-family: 'MBForeverRaw';
     src: url('../font/MBForeverRaw.ttf') format('truetype'),url('../font/MBForeverRaw.woff') format('woff');
 }
+@font-face {
+    font-family: "Segoe UI Variable-RegularSmall";
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/64533fbe88550713e376f15d/fonts/segoe-ui-variable-small-light.ttf') format("truetype");
+  }
 
 /*global*/
+.navitem{
+    width:120px;
+}
+.targetlang,#currlanglink{
+    display:block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333333;
+    text-decoration: none;
+}
 .line {
     position: absolute;
     top: 50%;
@@ -131,8 +148,8 @@ p.margin-bottom-24px{
     mask-image: linear-gradient(
       to right,
       hsl(0 0% 0% / 0),
-      hsl(0 0% 0% / 1) 20%,
-      hsl(0 0% 0% / 1) 80%,
+      hsl(0 0% 0% / 1) 10%,
+      hsl(0 0% 0% / 1) 90%,
       hsl(0 0% 0% / 0)
     );
     position: relative;
