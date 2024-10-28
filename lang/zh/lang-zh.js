@@ -76,6 +76,7 @@ var linguJSON = {
         /*Gallery */
         {
             "source": "Works that I done before",
+            "target_zh": "過去的作品",
             "target_ja": "過去に手がけた作品"
             
         },
