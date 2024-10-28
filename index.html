@@ -17,17 +17,30 @@
     
     <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     <link href="images/app-icon.png" rel="apple-touch-icon" />
+    <script>
+        window.onload = function() {
+            // Get the current URL
+            let currentURL = window.location.href;
 
+            // Check if 'lang' parameter is already in the URL
+            if (!currentURL.includes('lang=')) {
+                // Check if the URL already has a query string
+                if (currentURL.indexOf('?') === -1) {
+                    // If no query string, append '?lang=en'
+                    window.location.href = currentURL + '?lang=en';
+                } else {
+                    // If there is a query string, append '&lang=en'
+                    window.location.href = currentURL + '&lang=en';
+                }
+            }
+        };
+    </script>
     
     
 
 </head>
 
 <body>
-    <!--Translation-->
-    <script src="js/LingumaniaJS-Release/lingumania.min.js"></script>
-    <script src="lang/zh/lang-zh.js"></script>
-
     <header id="header" class="header">
         <div class="navbar-no-shadow">
             <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease"
@@ -38,7 +51,7 @@
                         <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
                             <ul role="list" class="nav-menu w-list-unstyled">
                                 <li><a href="./html/about.html" class="nav-link-2">About</a></li>
-                                <li><a href="./html/myWorks.html" class="nav-link-2">Gallery</a></li>
+                                <li><a href="./html/myworks.html" class="nav-link-2">Gallery</a></li>
                                 <li><a href="./html/blogs_main.html" class="nav-link-2">Blogs</a></li>
                                 <li><a href="./html/Home_N.html" class="nav-link-2">Pricing</a></li>
                                 <li class="navitem">
@@ -156,8 +169,9 @@
     <footer class="footer"><p><i>sources of images from Courtesy of Icon pack by Icons8 – designed by ©Thenamewaseat 2024</i></p></footer>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script> 
     <script src="./js/scroll.js"></script>
-
-    </script>
+    <!--Translation-->
+    <script src="js/LingumaniaJS-Release/lingumania.min.js"></script>
+    <script src="lang/lang.js"></script>
 </body>
 
 </html>
