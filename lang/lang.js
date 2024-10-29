@@ -56,7 +56,7 @@ var linguJSON = {
         },
         {
             "source": "Pricing",
-            "target_zh": "價目",
+            "target_zh": "價目表",
             "target_ja": "価格"
         },
         {
