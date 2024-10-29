@@ -1,3 +1,21 @@
+//init language on load
+window.onload = function() {
+    // Get the current URL
+    let currentURL = window.location.href;
+
+    // Check if 'lang' parameter is already in the URL
+    if (!currentURL.includes('lang=')) {
+        // Check if the URL already has a query string
+        if (currentURL.indexOf('?') === -1) {
+            // If no query string, append '?lang=en'
+            window.location.href = currentURL + '?lang=en';
+        } else {
+            // If there is a query string, append '&lang=en'
+            window.location.href = currentURL + '&lang=en';
+        }
+    }
+};
+//translation data
 var linguJSON = {
     "languages": [
         {
@@ -56,6 +74,11 @@ var linguJSON = {
             "source": "I am thenamewaseat, who are passionate in learning game related skills, such as Live 2D. I also dig in to installation, Game and App design and drawings.",
             "target_ja": "thenamewaseatはLive 2Dなどゲーム関連のスキル習得に熱中している。インスタレーション、ゲームやアプリのデザイン、ドローイングも得意です。"
             
+        },
+        {
+            "source": "UX/UI designer • illustrator • Game designer • Web designer",
+            "target_zh": "UI/UX 設計 • 繪師 • 遊戲設計 • 網頁設計",
+            "target_ja": "UI/UX 設計 • 絵師 • ゲーム設計 • サイト設計"
         },
         /*About */
         {
