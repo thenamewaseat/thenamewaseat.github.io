@@ -1,5 +1,5 @@
 #table{
-    height:600px;
+    height:1200px;
 }
 
 .flex1,.flexfull,.flex1>a,.flexfull>a{
@@ -8,8 +8,8 @@
 }
 .flex1>a{
     width:50%;
-    height:200px;
-    line-height:200px;
+    height:400px;
+    line-height:400px;
     text-align: center;
     float:left;
     color:white;
@@ -22,7 +22,7 @@
 
 .flexfull>a{
     width:100%;
-    line-height:200px;
+    line-height:400px;
     text-align: center;
     clear: left;
     color:white;
@@ -158,11 +158,10 @@
     }
 }
 @media screen and (max-width: 764px) {
-    #table{
-        height:1200px;
-    }
     .flex1>a{
         width:100%;
+        height:200px;
+        line-height:200px;
     }
     #f1:hover{
         transition:ease;
