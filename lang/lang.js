@@ -67,6 +67,7 @@ var linguJSON = {
         /*Index */
         {
             "source": "Thenamewaseat is a Student from Creative Media",
+            "target_zh": "Thenamewaseat是一位就讀創意媒體的學生。",
             "target_ja": "Thenamewaseatはクリエイティブ・メディア学科の学生。"
             
         },
