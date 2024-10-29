@@ -66,6 +66,18 @@ var linguJSON = {
         },
         /*Index */
         {
+            "source": "Infinite",
+            /*"target_zh": "Thenamewaseat是一位就讀創意媒體的學生。",*/
+            "target_ja": "無限の"
+            
+        },
+        {
+            "source": "Possibilites",
+            /*"target_zh": "Thenamewaseat是一位就讀創意媒體的學生。",*/
+            "target_ja": "可能性"
+            
+        },
+        {
             "source": "Thenamewaseat is a Student from Creative Media",
             "target_zh": "Thenamewaseat是一位就讀創意媒體的學生。",
             "target_ja": "Thenamewaseatはクリエイティブ・メディア学科の学生。"
