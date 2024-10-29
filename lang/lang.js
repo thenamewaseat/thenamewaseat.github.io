@@ -56,7 +56,7 @@ var linguJSON = {
         },
         {
             "source": "Pricing",
-            "target_zh": "價錢",
+            "target_zh": "價目",
             "target_ja": "価格"
         },
         {
@@ -106,6 +106,7 @@ var linguJSON = {
         },
         {
             "source": "(page not yet finished, please refer to pdf below)",
+            "target_zh": "（頁面尚未完成，請參考以下PDF。）",
             "target_ja": "(未完成のページがありますので、下記PDFをご参照ください。）"
         }
     ]/*,
