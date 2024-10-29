@@ -20,8 +20,8 @@ var linguJSON = {
     "languages": [
         {
             "lang_name": "English",
-            "lang_code": "",
-            "url_pattern": ""
+            "lang_code": "io",
+            "url_pattern": "?"
         },
         {
             "lang_name": "中文",
