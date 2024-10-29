@@ -1,5 +1,5 @@
 //init language on load
-window.onload = function() {
+/*window.onload = function() {
     // Get the current URL
     let currentURL = window.location.href;
 
@@ -14,14 +14,14 @@ window.onload = function() {
             window.location.href = currentURL + '&lang=en';
         }
     }
-};
+};*/
 //translation data
 var linguJSON = {
     "languages": [
         {
             "lang_name": "English",
-            "lang_code": "en",
-            "url_pattern": "?"
+            "lang_code": "",
+            "url_pattern": ""
         },
         {
             "lang_name": "中文",

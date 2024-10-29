@@ -1,3 +1,17 @@
+//smooth loading
+/*$(document).ready(function(){
+    // to fade in on page load
+    $("section").css("display", "none");
+    $("section").fadeIn(400); 
+    // to fade out before redirect
+    $('a').click(function(e){
+        redirect = $(this).attr('href');
+        e.preventDefault();
+        $('section').fadeOut(400, function(){
+            document.location.href = redirect
+        });
+    });
+})*/
 // LENIS SMOOTH SCROLL
 let lenis;
     if (Webflow.env("editor") === undefined) {
