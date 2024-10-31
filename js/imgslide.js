@@ -1,19 +1,20 @@
+//record last sliderid when click modal
+let lastslider;
 const currentIndexes = {
     slider1: 0,
-    //slider2: 0
+    slider2: 0
 };
 const images = {
     slider1: [
         "../images/app_icon.png",
         "../images/app_icon.png",
         "../images/app_icon.png"
+    ],
+    slider2: [
+        "../images/Drawings_Thumbnail.jpg",
+        "../images/Drawings_Thumbnail.jpg",
+        "../images/Drawings_Thumbnail.jpg"
     ]
-    /*slider2: [
-        "https://via.placeholder.com/600x300?text=Image+5",
-        "https://via.placeholder.com/600x300?text=Image+6",
-        "https://via.placeholder.com/600x300?text=Image+7",
-        "https://via.placeholder.com/600x300?text=Image+8"
-    ]*/
 };
 
 let autoSlideInterval;
@@ -23,7 +24,7 @@ function startAutoSlide() {
         Object.keys(currentIndexes).forEach(sliderId => {
             showSlide(sliderId, currentIndexes[sliderId] + 1);
         });
-    }, 3000);
+    }, 5000);
 }
 
 function stopAutoSlide() {
@@ -31,6 +32,7 @@ function stopAutoSlide() {
 }
 
 function showSlide(sliderId, index) {
+    stopAutoSlide();
     const slides = document.querySelector(`#${sliderId} .slides`);
     const totalSlides = document.querySelectorAll(`#${sliderId} .slide`).length;
     currentIndexes[sliderId] = (index + totalSlides) % totalSlides; // Loop around
@@ -46,6 +48,7 @@ function showSlide(sliderId, index) {
             //updateActiveBox(sliderId, i);
         }
     });
+    startAutoSlide();
 }
 
 /*function updateActiveBox(sliderId, index) {
@@ -54,15 +57,16 @@ function showSlide(sliderId, index) {
 }*/
 
 function currentSlide(sliderId, index) {
-    stopAutoSlide(); // Stop the interval
+    //stopAutoSlide(); // Stop the interval
     showSlide(sliderId, index);
-    startAutoSlide(); // Restart the interval
+    //startAutoSlide(); // Restart the interval
 }
 
 function openModal(sliderId, index) {
     const modal = document.getElementById('modal');
     const modalImage = document.getElementById('modalImage');
-    currentIndexes[sliderId] = index; // Set current index for modal navigation
+    lastslider=sliderId;
+    currentIndexes[sliderId] = index; // Set current index for the opened slider
     updateModalImage(sliderId); // Update the modal image
     modal.style.display = 'flex';
     stopAutoSlide();
@@ -71,13 +75,14 @@ function openModal(sliderId, index) {
 function closeModal() {
     const modal = document.getElementById('modal');
     modal.style.display = 'none';
-    startAutoSlide(); // Restart the interval
+    startAutoSlide();
 }
 
 function navigateModal(direction) {
-    const activeSliderId = Object.keys(currentIndexes).find(sliderId => currentIndexes[sliderId] >= 0);
-    currentIndexes[activeSliderId] = (currentIndexes[activeSliderId] + direction + images[activeSliderId].length) % images[activeSliderId].length; // Wrap around based on total images
-    updateModalImage(activeSliderId); // Update the image in the modal
+    //const activeSliderId = Object.keys(currentIndexes).find(lastsliderId => currentIndexes[lastsliderId] >= 0);
+    const totalImages = images[lastslider].length;
+    currentIndexes[lastslider] = (currentIndexes[lastslider] + direction + totalImages) % totalImages; // Wrap around
+    updateModalImage(lastslider); // Update the image in the modal
 }
 
 function updateModalImage(sliderId) {
