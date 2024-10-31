@@ -5,8 +5,8 @@ const currentIndexes = {
 const images = {
     slider1: [
         "../images/app_icon.png",
-        "https://via.placeholder.com/600x300?text=Image+2",
-        "https://via.placeholder.com/600x300?text=Image+3"
+        "../images/app_icon.png",
+        "../images/app_icon.png"
     ]
     /*slider2: [
         "https://via.placeholder.com/600x300?text=Image+5",
