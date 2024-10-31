@@ -38,7 +38,7 @@
     overflow-x: auto;
 }
 .thumbnail {
-    object-fit: contain;
+    object-fit: cover;
     width: 80px;
     height: 80px;
     margin: 0 5px;
