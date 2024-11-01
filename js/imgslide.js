@@ -18,6 +18,8 @@ const images = {
 };
 
 let autoSlideInterval;
+let touchStartX = 0;
+let touchStartY = 0;
 
 function startAutoSlide() {
     autoSlideInterval = setInterval(() => {
@@ -69,12 +71,14 @@ function openModal(sliderId, index) {
     currentIndexes[sliderId] = index; // Set current index for the opened slider
     updateModalImage(sliderId); // Update the modal image
     modal.style.display = 'flex';
+    lenis.stop();
     stopAutoSlide();
 }
 
 function closeModal() {
     const modal = document.getElementById('modal');
     modal.style.display = 'none';
+    lenis.start();
     startAutoSlide();
 }
 
@@ -88,6 +92,51 @@ function navigateModal(direction) {
 function updateModalImage(sliderId) {
     const modalImage = document.getElementById('modalImage');
     modalImage.src = images[sliderId][currentIndexes[sliderId]]; // Load the actual image
+}
+
+function addSwipeListeners(modal) {
+    modal.addEventListener('touchstart', handleTouchStart, false);
+    modal.addEventListener('touchmove', handleTouchMove, false);
+}
+
+function removeSwipeListeners() {
+    const modal = document.getElementById('modal');
+    modal.removeEventListener('touchstart', handleTouchStart);
+    modal.removeEventListener('touchmove', handleTouchMove);
+}
+
+function handleTouchStart(evt) {
+    const firstTouch = evt.touches[0]; // Get the first touch point
+    touchStartX = firstTouch.clientX;
+    touchStartY = firstTouch.clientY;
+}
+
+function handleTouchMove(evt) {
+    if (!touchStartX || !touchStartY) {
+        return; // If we don't have a starting point, exit
+    }
+
+    const currentTouch = evt.touches[0];
+    const diffX = touchStartX - currentTouch.clientX;
+    const diffY = touchStartY - currentTouch.clientY;
+
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+        // Horizontal swipe
+        if (diffX > 0) {
+            navigateModal(1); // Swipe left to next image
+        } else {
+            navigateModal(-1); // Swipe right to previous image
+        }
+    } else {
+        // Vertical swipe
+        if (diffY > 0) {
+            closeModal(); // Swipe up to close modal
+        }
+    }
+
+    // Reset touch points
+    touchStartX = null;
+    touchStartY = null;
 }
 
 // Start auto slide on page load
