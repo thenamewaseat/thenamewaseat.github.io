@@ -59,9 +59,9 @@ function showSlide(sliderId, index) {
 }*/
 
 function currentSlide(sliderId, index) {
-    stopAutoSlide(); // Stop the interval
+    //stopAutoSlide(); // Stop the interval
     showSlide(sliderId, index);
-    startAutoSlide(); // Restart the interval
+    //startAutoSlide(); // Restart the interval
 }
 
 /*function openModal(sliderId, index) {
