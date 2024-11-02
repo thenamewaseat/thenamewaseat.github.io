@@ -5,6 +5,12 @@
     margin-left: auto;
     width: 100%;
 }
+#slider1 .slide{
+    img{
+        max-height: 400px;
+        object-fit: contain;
+    }
+}
 .sliderimgcontainer {
     position: relative;
     margin-right: auto;
@@ -126,7 +132,13 @@
 }
 @media screen and (max-width: 767px){
     .slider {
-        width: 80%;
+        width: 100%;
         max-width: 400px;
+    }
+    #slider1 .slide{
+        img{
+            max-height: 250px;
+            object-fit: contain;
+        }
     }
 }
