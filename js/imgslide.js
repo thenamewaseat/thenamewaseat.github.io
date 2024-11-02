@@ -59,12 +59,12 @@ function showSlide(sliderId, index) {
 }*/
 
 function currentSlide(sliderId, index) {
-    //stopAutoSlide(); // Stop the interval
+    stopAutoSlide(); // Stop the interval
     showSlide(sliderId, index);
-    //startAutoSlide(); // Restart the interval
+    startAutoSlide(); // Restart the interval
 }
 
-function openModal(sliderId, index) {
+/*function openModal(sliderId, index) {
     const modal = document.getElementById('modal');
     const modalImage = document.getElementById('modalImage');
     lastslider=sliderId;
@@ -137,7 +137,37 @@ function handleTouchMove(evt) {
     // Reset touch points
     touchStartX = null;
     touchStartY = null;
-}
+}*/
+/*<div class="slider" id="slider2">
+                <div class="sliderimgcontainer">
+                    <button class="arrow arrow-left" onclick="showSlide('slider2', currentIndexes['slider2'] - 1)">&#10094;</button>
+                    <div class="slides">
+                        <div class="slide" onclick="openModal('slider2', 0)"><img src="../images/Drawings_Thumbnail.jpg" alt="Image 4"></div>
+                        <div class="slide" onclick="openModal('slider2', 1)"><img src="../images/Drawings_Thumbnail.jpg" alt="Image 5"></div>
+                        <div class="slide" onclick="openModal('slider2', 2)"><img src="../images/Drawings_Thumbnail.jpg" alt="Image 6"></div>
+                    </div>
+                    <button class="arrow arrow-right" onclick="showSlide('slider2', currentIndexes['slider2'] + 1)">&#10095;</button>
+                </div>
+                <div class="thumbnails">
+                    <img class="thumbnail active" src="../images/Drawings_Thumbnail.jpg" alt="Thumbnail 4" onclick="currentSlide('slider2', 0)">
+                    <img class="thumbnail" src="../images/Drawings_Thumbnail.jpg" alt="Thumbnail 5" onclick="currentSlide('slider2', 1)">
+                    <img class="thumbnail" src="../images/Drawings_Thumbnail.jpg" alt="Thumbnail 6" onclick="currentSlide('slider2', 2)">
+                </div>
+                <div class="margin-bottom-24px"></div>
+                <div class="hero-wrapper-two">
+                    <h2>Illustration</h2>
+                    <!--<p class="margin-bottom-24px">Feature Not Yet Enabled</p>-->
+                </div>
+                <div>
+                    <h3>Price</h3>
+                    <div class="margin-bottom-24px"></div>
+                    <ul>
+                        <li><p class="margin-bottom-24px">IDK</p></li>
+                        <li><p class="margin-bottom-24px">IDK</p></li>
+                    </ul>
+                </div>
+                
+            </div>*/
 
 // Start auto slide on page load
 startAutoSlide();
