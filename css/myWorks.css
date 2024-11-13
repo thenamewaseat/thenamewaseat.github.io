@@ -76,6 +76,22 @@
     backdrop-filter:blur(3px);
     -webkit-backdrop-filter: blur(3px);
 }
+/*drawing_main*/
+.gridwrapper {
+	width: 80%;
+	margin: 50px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+}
+.gridwrapper img {
+	width: 100%;
+	cursor: pointer;
+	transition: 1s ease;
+}
+.gridwrapper img:hover {
+	transform: scale(0.9);
+}
 
 @media screen and (min-width: 767px) {
     #f1:hover{
