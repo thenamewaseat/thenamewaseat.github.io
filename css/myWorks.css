@@ -96,9 +96,9 @@
     }
 	
 }
-.gridwrapper img:hover {
-	/*transform: scale(0.9);*/
-}
+/*.gridwrapper img:hover {
+	transform: scale(0.9);
+}*/
 
 @media screen and (min-width: 767px) {
     #f1:hover{
