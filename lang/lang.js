@@ -117,6 +117,42 @@ var linguJSON = {
             
         },
         {
+            "source": "Installations",
+            "target_zh": "裝置藝術",
+            "target_ja": "インスタレーション"
+            
+        },
+        {
+            "source": "Drawings",
+            "target_zh": "繪畫",
+            "target_ja": "絵画"
+            
+        },
+        {
+            "source": "Photography",
+            "target_zh": "攝影",
+            "target_ja": "撮影"
+            
+        },
+        {
+            "source": "Games",
+            "target_zh": "遊戲設計",
+            "target_ja": "ゲーム設計"
+            
+        },
+        {
+            "source": "UI/UX design",
+            "target_zh": "UI/UX設計",
+            "target_ja": "UI/UX設計"
+            
+        },
+        {
+            "source": "Others",
+            "target_zh": "其他",
+            "target_ja": "その他"
+            
+        },
+        {
             "source": "(page not yet finished, please refer to pdf below)",
             "target_zh": "（頁面尚未完成，請參考以下PDF。）",
             "target_ja": "(未完成のページがありますので、下記PDFをご参照ください。）"
