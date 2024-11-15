@@ -11,6 +11,9 @@
   }
 
 /*global*/
+body{
+    cursor: url('../images/cursor_auto.svg'),auto;
+}
 .navitem{
     width:120px;
 }
