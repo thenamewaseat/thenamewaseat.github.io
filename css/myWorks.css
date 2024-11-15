@@ -98,6 +98,7 @@
 }
 .gridwrapper img:hover {
 	transform: scale(0.9);
+    cursor: url('../images/cursor_auto.png'),pointer;
 }
 
 @media screen and (min-width: 767px) {
