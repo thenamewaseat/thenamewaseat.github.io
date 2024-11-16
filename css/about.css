@@ -14,6 +14,8 @@
     padding-right: 20%;
 
 }
+table{
+}
 table td{
     /*display: flex;*/
     vertical-align: 10px;
@@ -22,4 +24,16 @@ table p{
     padding-left: 20px;
     text-align: left;
    
+}
+span.chinesewarp{
+    white-space: nowrap;
+}
+@media screen and (max-width: 767px){
+    table{
+        width:95%;
+    }
+    table td.right p{
+        text-align: right;
+    }
+    
 }

@@ -95,9 +95,9 @@ var linguJSON = {
         },
         /*About */
         {
-            "source": "2022 - Now :",
-            "target_zh": "2022 - 現在 :",
-            "target_ja": "2022 - 現在 :"
+            "source": "Now :",
+            "target_zh": "現在:",
+            "target_ja": "現在:"
         },
         {
             "source": "City University of Hong Kong",
