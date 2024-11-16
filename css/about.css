@@ -14,3 +14,12 @@
     padding-right: 20%;
 
 }
+table td{
+    /*display: flex;*/
+    vertical-align: 10px;
+}
+table p{
+    padding-left: 20px;
+    text-align: left;
+   
+}

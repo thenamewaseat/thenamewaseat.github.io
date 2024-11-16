@@ -95,6 +95,31 @@ var linguJSON = {
         },
         /*About */
         {
+            "source": "2022 - Now :",
+            "target_zh": "2022 - 現在 :",
+            "target_ja": "2022 - 現在 :"
+        },
+        {
+            "source": "City University of Hong Kong",
+            "target_zh": "香港城市大學",
+            "target_ja": "香港城市大学"
+        },
+        {
+            "source": "Bachelor of Science in Creative Media",
+            "target_zh": "創意媒體理學士",
+            "target_ja": "クリエイティブ・メディア理学士"
+        },
+        {
+            "source": "PolyU, Hong Kong Community College",
+            "target_zh": "理大香港專上學院",
+            "target_ja": "理工大学香港コミュニティカレッジ"
+        },
+        {
+            "source": "Associate Degree in Information Technology",
+            "target_zh": "資訊科技副學士",
+            "target_ja": "情報技術準学士"
+        },
+        {
             "source": "Skills",
             "target_zh": "技能",
             "target_ja": "技能"

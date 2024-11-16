@@ -2128,6 +2128,13 @@ body {
   margin-right: auto;
 }
 
+.container-two {
+  max-width: 750px;
+  margin: auto;
+  padding-bottom: 0;
+  display: flex;
+}
+
 .navbar-wrapper-three {
   justify-content: center;
   align-items: center;
