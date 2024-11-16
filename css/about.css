@@ -28,7 +28,7 @@ span.chinesewarp{
 }
 @media screen and (max-width: 767px){
     table{
-        width:95%;
+        width:90%;
     }
     table td.right p{
         text-align: right;
