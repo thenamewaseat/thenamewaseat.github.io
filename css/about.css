@@ -13,6 +13,7 @@
     text-overflow: clip;
 }
 #about{
+    background: url("../images/about_bg.png");
     padding-left: 20%;
     padding-right: 20%;
 
