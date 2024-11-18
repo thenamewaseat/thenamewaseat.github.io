@@ -33,6 +33,9 @@ span.chinesewarp{
     white-space: nowrap;
 }
 @media screen and (max-width: 767px){
+    #about img{
+        max-width: 200px;
+    }
     #about{
         padding-left: 5%;
         padding-right: 5%;
