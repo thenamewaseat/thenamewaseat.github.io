@@ -95,6 +95,21 @@ var linguJSON = {
         },
         /*About */
         {
+            "source": "A university student who likes to draw and code.",
+            "target_zh": "喜歡畫畫和寫程序的大學生～",
+            "target_ja": "絵を描いたりプログラムを書いたりするのが好きな大学生～"
+        },
+        {
+            "source": "Old website (2017)",
+            "target_zh": "舊網站 (2017)",
+            "target_ja": "旧サイト（2017年）"
+        },
+        {
+            "source": "Old website (2015)",
+            "target_zh": "舊網站 (2015)",
+            "target_ja": "旧サイト（2015年）"
+        },
+        {
             "source": "Now :",
             "target_zh": "現在:",
             "target_ja": "現在:"

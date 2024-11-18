@@ -5,6 +5,9 @@
     width:95vw;
     overflow: hidden;
 }
+#about a{
+    color:grey;
+}
 .margin-bottom-24px.br{
     
     text-overflow: clip;
