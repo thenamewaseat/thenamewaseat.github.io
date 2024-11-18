@@ -102,12 +102,12 @@ var linguJSON = {
         {
             "source": "Old website (2017)",
             "target_zh": "舊網站 (2017)",
-            "target_ja": "旧サイト（2017年）"
+            "target_ja": "旧サイト（ 2017年）"
         },
         {
             "source": "Old website (2015)",
             "target_zh": "舊網站 (2015)",
-            "target_ja": "旧サイト（2015年）"
+            "target_ja": "旧サイト（ 2015年）"
         },
         {
             "source": "Now :",
