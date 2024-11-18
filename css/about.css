@@ -14,6 +14,9 @@
     padding-right: 20%;
 
 }
+#about img{
+    width: 300px;
+}
 table td{
     /*display: flex;*/
     vertical-align: 10px;
