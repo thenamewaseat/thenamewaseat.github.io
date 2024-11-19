@@ -372,7 +372,7 @@ p.margin-bottom-24px{
 }
 
 footer{
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     display:block;
     padding-top:10px;
     padding-left: 1%;
@@ -407,7 +407,7 @@ html.lenis {
   /*footer*/
   .footer-clean {
     padding:50px 0;
-    background-color:#fff;
+    background-color:#eeeeee;
     color:#4b4c4d;
   }
   

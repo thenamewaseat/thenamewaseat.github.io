@@ -189,7 +189,7 @@
 }
 @media screen and (max-width: 764px) {
     .gridwrapper {
-        width: 95%;
+        width: 97%;
         margin: 50px auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px,1fr));

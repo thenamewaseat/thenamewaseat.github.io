@@ -4454,7 +4454,7 @@ input[type=submit].btn-block {
     }
 }*/
 
-@media (min-width:576px) {
+/*@media (min-width:576px) {
     .navbar-expand-sm {
         -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
@@ -4492,7 +4492,7 @@ input[type=submit].btn-block {
     .navbar-expand-sm .navbar-toggler {
         display: none
     }
-}
+}*/
 
 @media (max-width:767.98px) {
 
@@ -9901,7 +9901,7 @@ a.text-dark:hover {
     visibility: hidden !important
 }
 
-@media print {
+/*@media print {
 
     *,
     ::after,
@@ -9998,6 +9998,6 @@ a.text-dark:hover {
         color: inherit;
         border-color: #dee2e6
     }
-}
+}*/
 
 /*# sourceMappingURL=bootstrap.min.css.map */
