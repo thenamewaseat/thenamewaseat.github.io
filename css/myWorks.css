@@ -1,5 +1,11 @@
 #table{
     height:1200px;
+    
+}
+#table a:hover{
+    color:white;
+    text-decoration: none;
+    
 }
 
 .flex1,.flexfull,.flex1>a,.flexfull>a{
