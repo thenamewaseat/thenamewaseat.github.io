@@ -85,6 +85,7 @@ var linguJSON = {
         },
         {
             "source": "I am thenamewaseat, who are passionate in learning game related skills, such as Live 2D. I also dig in to installation, Game and App design and drawings.",
+            "target_zh": "我是 thenamewaseat，是一位熱衷於學習遊戲相關技能的學生，例如 Live 2D。我也鑽研裝置藝術、遊戲和應用程式的設計與電繪。",
             "target_ja": "thenamewaseatはLive 2Dなどゲーム関連のスキル習得に熱中している。インスタレーション、ゲームやアプリのデザイン、ドローイングも得意です。"
             
         },

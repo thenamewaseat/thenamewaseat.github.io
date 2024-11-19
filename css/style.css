@@ -16,9 +16,14 @@ body{
 }
 a{
     cursor: url('../images/cursor_auto.png'),pointer;
+    text-decoration: none;
 }
 a:hover{
     cursor: url('../images/cursor_auto.png'),pointer;
+}
+#langswitcher a:hover, .nav-link-2:hover{
+    text-decoration: none;
+    color:#777668
 }
 .navitem{
     width:120px;
