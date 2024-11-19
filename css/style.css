@@ -9,8 +9,19 @@
     font-weight: 400;
     src: url('https://anima-uploads.s3.amazonaws.com/projects/64533fbe88550713e376f15d/fonts/segoe-ui-variable-small-light.ttf') format("truetype");
   }
+:root{
 
+}
 /*global*/
+.dark-mode {
+    background-color: black;
+    color: var(--white);
+  }
+  .dark-mode2 {
+    background-color: rgba(0, 0, 0, 0.897) !important;
+    color: var(--white);
+  }
+  
 body{
     cursor: url('../images/cursor_auto.png'),auto;
 }
