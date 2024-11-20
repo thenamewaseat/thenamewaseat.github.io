@@ -19,8 +19,8 @@
 /*global*/
 
 @media (prefers-color-scheme: dark) {
-    body,#heading {
-        background-color: #222222; /* Dark mode background */
+    body,#heading ,.gridwrapper{
+        background-color: #222222 !important; /* Dark mode background */
         color: var(--d-font); /* Dark mode text */
         
     }
