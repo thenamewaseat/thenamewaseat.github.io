@@ -1,26 +1,36 @@
-function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    // Save the current mode to local storage
-    if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('darkMode', 'enabled');
-    } else {
-        localStorage.setItem('darkMode', 'disabled');
-    }
-}
+let darkModeSetting = localStorage.getItem('darkMode');
+/*document.addEventListener('DOMContentLoaded', () => {
+    // Check local storage on page load
+    function checkDarkMode() {
+        const darkModeSetting = localStorage.getItem('darkMode');
+        if (darkModeSetting === 'enabled') {
+            document.body.classList.add('dark-mode');
+        }
+    }*/
 
-// Check local storage on page load
-function checkDarkMode() {
-    const darkModeSetting = localStorage.getItem('darkMode');
+    // Function to update image source based on mode
+    /*function updateImage() {
+        const img = document.getElementById('modeImage');
+        const darkModeSetting = localStorage.getItem('darkMode');
+        img.src = darkModeSetting === 'enabled' ? 'dark-image.jpg' : 'light-image.jpg';
+    }*/
     if (darkModeSetting === 'enabled') {
         document.body.classList.add('dark-mode');
     }
-}
+    // Initialize dark mode based on user preference
+    //checkDarkMode();
+    //updateImage();
 
-// Event listener for the toggle button
-document.getElementById('toggleButton').addEventListener('click', toggleDarkMode);
-
-// Initialize dark mode based on user preference
-checkDarkMode();
+    // Event listener for the toggle button
+    document.getElementById('toggleButton').addEventListener('click', () => {
+        //document.body.classList.toggle('dark-mode');
+        if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+            document.body.classList.toggle("dark-mode");
+        } else {
+            document.body.classList.add("dark-mode");
+        }
+        //updateImage(); // Update image for the current mode
+    });
 
 /*if ( document.documentElement ) {
     if ( document.documentElement.hasAttribute("data-bs-theme-mode")) {

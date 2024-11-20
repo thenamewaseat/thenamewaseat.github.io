@@ -1,5 +1,5 @@
-#about image{
-    max-width: 400px;
+body.dark-mode #about{
+    background: url("../images/about_bg_dark.png");;
 }
 .link{
     width:95vw;

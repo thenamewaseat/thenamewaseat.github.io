@@ -25,6 +25,17 @@
 </head>
 
 <body>
+    <script type="module">
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check local storage on page load
+            function checkDarkMode() {
+                const darkModeSetting = localStorage.getItem('darkMode');
+                if (darkModeSetting === 'enabled') {
+                    document.body.classList.add('dark-mode');
+                }
+            }
+        })
+    </script>
     <script src="../js/main.js"></script>
     <script type="module">
         import PhotoSwipeLightbox from '../js/photoswipe/photoswipe-lightbox.esm.js';

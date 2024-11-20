@@ -13,16 +13,62 @@
 
 }*/
 /*global*/
+
+@media (prefers-color-scheme: dark) {
+    body,#heading {
+        background-color: #121212; /* Dark mode background */
+        color: #ffffff; /* Dark mode text */
+        
+    }
+    
+    body .header{
+        background-color: rgba(0, 0, 0, 0.9);; /* Dark mode background */
+         /* Dark mode text */
+        .nav-link-2,#curlang{
+            color: #ffffff;
+        }
+        .w-dropdown-btn, .w-dropdown-toggle, .w-dropdown-link {
+            color: #ffffff
+        }
+        .nav-dropdown-list-2 {
+            background-color: #000;
+    
+        }
+        #currlanglink ,.targetlang{
+            color:#ffffff
+        }
+        @media screen and (max-width: 991px) {
+            .nav-menu {
+                background-color: #000;
+            }
+        }
+    }
+    body.dark-mode .blocks {
+        background-color: rgba(0, 0, 0, 0.897) !important;
+        color: var(--white);
+      }
+  }
 body.dark-mode {
     background-color: #121212; /* Dark mode background */
     color: #ffffff; /* Dark mode text */
     
 }
+
 body.dark-mode .header{
     background-color: rgba(0, 0, 0, 0.9);; /* Dark mode background */
      /* Dark mode text */
     .nav-link-2,#curlang{
         color: #ffffff;
+    }
+    .w-dropdown-btn, .w-dropdown-toggle, .w-dropdown-link {
+        color: #ffffff
+    }
+    .nav-dropdown-list-2 {
+        background-color: #000;
+
+    }
+    #currlanglink ,.targetlang{
+        color:#ffffff
     }
     @media screen and (max-width: 991px) {
         .nav-menu {
@@ -38,7 +84,7 @@ body.dark-mode .header{
     border-radius: 5px;
     background-color: #007BFF;
     color: white;
-    transition: background-color 0.3s;
+    /*transition: background-color 0.3s;*/
 }
 .toggle-button:hover {
     background-color: #0056b3;
@@ -48,7 +94,7 @@ body.dark-mode .blocks {
     color: var(--white);
   }
 body{
-    transition: background-color 0.3s, color 0.3s;
+    /*transition: background-color 0.3s, color 0.3s;*/
     cursor: url('../images/cursor_auto.png'),auto;
 }
 a{
@@ -185,7 +231,7 @@ p.margin-bottom-24px{
     text-shadow:none;
 }
 .blocks{
-    transition: background-color 0.3s, color 0.3s;
+    /*transition: background-color 0.3s, color 0.3s;*/
     width: 100%;
     height: 1500px;
     background-color: rgba(255, 255, 255, 0.897);
