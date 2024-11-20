@@ -35,6 +35,15 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
+@media (prefers-color-scheme: dark) {
+    .footer-clean{
+        background-color: #2b2b2b;
+        div{
+            color: #fafafa;
+        }
+    }
+}
+
 /**,
 ::after,
 ::before {

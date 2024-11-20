@@ -43,10 +43,16 @@
             }
         }
     }
-    body.dark-mode .blocks {
+    body .blocks {
         background-color: rgba(0, 0, 0, 0.897) !important;
         color: var(--white);
       }
+      body #about{
+        background: url("../images/about_bg_dark.png");;
+    }
+    .footer{
+        background-color: #333333;
+    }
   }
 body.dark-mode {
     background-color: #121212; /* Dark mode background */
