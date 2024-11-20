@@ -9,49 +9,53 @@
     font-weight: 400;
     src: url('https://anima-uploads.s3.amazonaws.com/projects/64533fbe88550713e376f15d/fonts/segoe-ui-variable-small-light.ttf') format("truetype");
   }
-/*:root{
-
-}*/
+:root{
+    --d-font:#f7f7f7;
+    --d-bg:#222222;
+    --d-header:rgba(41, 41, 41, 0.9);
+    --d-blocks:rgba(29, 29, 29, 0.897);
+    --black:#000;
+}
 /*global*/
 
 @media (prefers-color-scheme: dark) {
     body,#heading {
-        background-color: #121212; /* Dark mode background */
-        color: #ffffff; /* Dark mode text */
+        background-color: #222222; /* Dark mode background */
+        color: var(--d-font); /* Dark mode text */
         
     }
     
     body .header{
-        background-color: rgba(0, 0, 0, 0.9);; /* Dark mode background */
+        background-color: var(--d-header); /* Dark mode background */
          /* Dark mode text */
         .nav-link-2,#curlang{
-            color: #ffffff;
+            color: var(--d-font);
         }
         .w-dropdown-btn, .w-dropdown-toggle, .w-dropdown-link {
-            color: #ffffff
+            color: var(--d-font);
         }
         .nav-dropdown-list-2 {
-            background-color: #000;
+            background-color: var(--black);
     
         }
         #currlanglink ,.targetlang{
-            color:#ffffff
+            color:var(--d-font);
         }
         @media screen and (max-width: 991px) {
             .nav-menu {
-                background-color: #000;
+                background-color: var(--black);
             }
         }
     }
     body .blocks {
-        background-color: rgba(0, 0, 0, 0.897) !important;
+        background-color: var(--d-blocks) !important;
         color: var(--white);
       }
       body #about{
         background: url("../images/about_bg_dark.png");;
     }
-    .footer{
-        background-color: #333333;
+    body .line,.dot{
+        background-color: #adadad;
     }
   }
 body.dark-mode {
