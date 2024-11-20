@@ -11,7 +11,7 @@
   }
 :root{
     --d-font:#f7f7f7;
-    --d-bg:#222222;
+    --d-bg:#1f1f1f;
     --d-header:rgba(41, 41, 41, 0.9);
     --d-blocks:rgba(29, 29, 29, 0.897);
     --black:#000;
@@ -20,7 +20,7 @@
 
 @media (prefers-color-scheme: dark) {
     body,#heading ,.gridwrapper{
-        background-color: #222222 !important; /* Dark mode background */
+        background-color: var(--d-bg) !important; /* Dark mode background */
         color: var(--d-font) !important; /* Dark mode text */
         
     }
