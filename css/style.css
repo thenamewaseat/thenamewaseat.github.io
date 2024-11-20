@@ -21,7 +21,7 @@
 @media (prefers-color-scheme: dark) {
     body,#heading ,.gridwrapper{
         background-color: #222222 !important; /* Dark mode background */
-        color: var(--d-font); /* Dark mode text */
+        color: var(--d-font) !important; /* Dark mode text */
         
     }
     
