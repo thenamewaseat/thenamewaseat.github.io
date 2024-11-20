@@ -55,7 +55,7 @@
         background: url("../images/about_bg_dark.png");;
     }
     body .line,.dot{
-        background-color: #adadad;
+        background-color: #adadad !important;
     }
   }
 body.dark-mode {
