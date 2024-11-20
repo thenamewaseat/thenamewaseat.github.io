@@ -24,7 +24,9 @@
         color: var(--d-font) !important; /* Dark mode text */
         
     }
-    
+    img.icon{
+        filter: invert(95%) !important;
+    }
     body .header{
         background-color: var(--d-header); /* Dark mode background */
          /* Dark mode text */
