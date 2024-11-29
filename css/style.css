@@ -49,6 +49,12 @@
             }
         }
     }
+    #about .container{
+        background-color: #2c2c2c !important;
+        .item{
+            color: #eeeeee;
+        }
+    }
     body .blocks {
         background-color: var(--d-blocks) !important;
         color: var(--white);
