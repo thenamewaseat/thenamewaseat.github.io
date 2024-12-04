@@ -197,6 +197,22 @@ var linguJSON = {
             "source": "(page not yet finished, please refer to pdf below)",
             "target_zh": "（頁面尚未完成，請參考以下PDF。）",
             "target_ja": "(未完成のページがありますので、下記PDFをご参照ください。）"
+        },
+        /*About */
+        {
+            "source": "Icon",
+            "target_zh": "頭像",
+            "target_ja": "アイコン"
+        },
+        {
+            "source": "Illustration",
+            "target_zh": "插畫",
+            "target_ja": "イラスト"
+        },
+        {
+            "source": "Terms of use",
+            "target_zh": "使用規範",
+            "target_ja": "利用規約"
         }
     ]/*,
     "translated_pages": [
