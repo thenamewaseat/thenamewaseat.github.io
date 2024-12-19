@@ -14,6 +14,7 @@ let darkModeSetting = localStorage.getItem('darkMode');
         const darkModeSetting = localStorage.getItem('darkMode');
         img.src = darkModeSetting === 'enabled' ? 'dark-image.jpg' : 'light-image.jpg';
     }*/
+   /* <!--<button class="toggle-button" id="toggleButton">Toggle Dark Mode</button>--> */
     if (darkModeSetting === 'enabled') {
         document.body.classList.add('dark-mode');
     }
