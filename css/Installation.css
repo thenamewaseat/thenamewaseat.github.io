@@ -25,3 +25,9 @@
     filter: brightness(50%);
     cursor: url('../images/cursor_auto.png'),pointer;
 }
+@media screen and (max-width: 767px){
+    .gridwrapper {
+        width:100%;
+        grid-template-columns: repeat(1, 100%) ;
+    }
+}
