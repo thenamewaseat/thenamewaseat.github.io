@@ -6,6 +6,7 @@
 	grid-template-columns: repeat(2, minmax(200px,1fr)) ;
     /*grid-auto-rows: 350px;*/
     grid-gap: 10px;
+    
     img{
         transition: 1s ease;
     }
@@ -22,9 +23,9 @@
     place-self: center;
     width: 100%;
     text-align: center;
-
 }
 .gridgp{
+    overflow: hidden;
     display: grid;
     grid-template-areas: "gridgp";
 	grid-template-columns: repeat(1, minmax(200px,1fr)) ;
@@ -53,7 +54,9 @@
     img{
         cursor: url('../images/cursor_auto.png'),pointer;
         transition: 1s ease;
-        filter: brightness(50%);
+        filter: brightness(70%);
+        transform:scale(1.1);
+        overflow: hidden;
     
     }
 	/*transform: scale(0.9);*/
