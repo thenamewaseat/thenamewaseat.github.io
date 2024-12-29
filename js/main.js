@@ -15,15 +15,15 @@ let darkModeSetting = localStorage.getItem('darkMode');
         img.src = darkModeSetting === 'enabled' ? 'dark-image.jpg' : 'light-image.jpg';
     }*/
    /* <!--<button class="toggle-button" id="toggleButton">Toggle Dark Mode</button>--> */
-    if (darkModeSetting === 'enabled') {
+    /*if (darkModeSetting === 'enabled') {
         document.body.classList.add('dark-mode');
-    }
+    }*/
     // Initialize dark mode based on user preference
     //checkDarkMode();
     //updateImage();
 
     // Event listener for the toggle button
-    document.getElementById('toggleButton').addEventListener('click', () => {
+    /*document.getElementById('toggleButton').addEventListener('click', () => {
         //document.body.classList.toggle('dark-mode');
         if(window.matchMedia('(prefers-color-scheme: dark)').matches){
             document.body.classList.toggle("dark-mode");
@@ -31,7 +31,7 @@ let darkModeSetting = localStorage.getItem('darkMode');
             document.body.classList.toggle("dark-mode");
         }
         //updateImage(); // Update image for the current mode
-    });
+    });*/
 
 /*if ( document.documentElement ) {
     if ( document.documentElement.hasAttribute("data-bs-theme-mode")) {

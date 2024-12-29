@@ -2,6 +2,7 @@
 	width: 80%;
 	margin: 50px auto;
 	display: grid;
+    grid-template-areas: "wrapper";
 	grid-template-columns: repeat(2, minmax(200px,1fr)) ;
     /*grid-auto-rows: 350px;*/
     grid-gap: 10px;
@@ -9,9 +10,34 @@
         transition: 1s ease;
     }
 }
+.gridgp > *,
+.gridgp::before {
+  grid-area: gridgp;
+}
+.gridgp{
+    display: grid;
+    grid-template-areas: "gridgp";
+	grid-template-columns: repeat(1, minmax(200px,1fr)) ;
+    position: relative;
+    .gridtext{
+        transition: 1s ease;
+        display: none;
+        z-index: 1;
+        place-self: center;
+        width: 100%;
+        text-align: center;
+    
+    }
+}
 .gridwrapper a {
-	
+	display: grid;
+    grid-template-areas: "gridgp";
+    grid-template-columns: repeat(1, minmax(200px,1fr)) ;
+    position: relative;
+    
     img{
+        top: 0;
+        /*left: 50%;*/
         object-fit: cover;
         width: 100%;
         height:100%;
@@ -19,11 +45,23 @@
     }
 	
 }
-.gridwrapper img:hover {
-	/*transform: scale(0.9);*/
-    transition: 1s ease;
-    filter: brightness(50%);
+.gridgp:has(a:hover),.gridgp:has(.gridtext:hover){
     cursor: url('../images/cursor_auto.png'),pointer;
+    img{
+        cursor: url('../images/cursor_auto.png'),pointer;
+        transition: 1s ease;
+        filter: brightness(50%);
+    
+    }
+	/*transform: scale(0.9);*/
+    
+    .gridtext{
+        transition: 1s ease;
+        z-index: 3;
+        display:block;
+        place-self: center;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 767px){
     .gridwrapper {
