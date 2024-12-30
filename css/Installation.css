@@ -8,7 +8,7 @@
 }
 .gridwrapper {
     animation: 1s ease-out 0s 1 slideload;
-	width: 80%;
+	width: 70%;
 	margin: 50px auto;
 	display: grid;
     grid-template-areas: "wrapper";
