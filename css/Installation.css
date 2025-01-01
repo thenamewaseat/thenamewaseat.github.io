@@ -7,7 +7,7 @@
     } 
 }
 .gridwrapper {
-    animation: 1s ease-out 0s 1 slideload;
+    animation: 1s ease-out 0s 0.8 slideload;
 	width: 70%;
 	margin: 50px auto;
 	display: grid;
@@ -25,9 +25,11 @@
   grid-area: gridgp;
 }
 .gridtext{
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px black;
     color: aliceblue;
     transition: 1s ease;
-    display: none;
+    opacity: 0;
     z-index: 1;
     place-self: center;
     width: 100%;
@@ -69,7 +71,7 @@
     .gridtext{
         transition: 1s ease;
         z-index: 3;
-        display:block;
+        opacity: 1;
         place-self: center;
         width: 100%;
     }
