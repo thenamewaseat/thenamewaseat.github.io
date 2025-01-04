@@ -213,6 +213,11 @@ var linguJSON = {
             "source": "Terms of use",
             "target_zh": "使用規範",
             "target_ja": "利用規約"
+        },
+        {
+            "source": "Private Commision",
+            "target_zh": "私人委託",
+            "target_ja": "利用規約"
         }
     ]/*,
     "translated_pages": [

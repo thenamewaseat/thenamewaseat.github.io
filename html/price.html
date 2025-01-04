@@ -68,6 +68,27 @@
             });
             lightbox.init();
             </script>
+            <script type="module">
+                import PhotoSwipeLightbox from '../js/photoswipe/photoswipe-lightbox.esm.js';
+                const lightbox = new PhotoSwipeLightbox({
+                  gallery: '#slides3',
+                  children: 'a',
+                  showAnimationDuration: 0,
+                  hideAnimationDuration: 0,
+                  pswpModule: () => import('../js/photoswipe/photoswipe.esm.js')
+                });
+                lightbox.on('beforeOpen', () => {
+                    stopAutoSlide();
+                    lenis.stop();
+                    // photoswipe starts to open
+                });
+                lightbox.on('close', () => {
+                    // PhotoSwipe starts to close, unbind most events here
+                    lenis.start();
+                    startAutoSlide();
+                });
+                lightbox.init();
+                </script>
     <!--Translation-->
     <script src="../js/LingumaniaJS-Release/lingumania.min.js"></script>
     <script src="../lang/lang.js"></script>
@@ -172,9 +193,10 @@
                     <img id="modalImage" src="" alt="Full Image">
                 </div>
                 <button class="modal-arrow modal-arrow-right" onclick="navigateModal(1)">&#10095;</button>
+
             </div>
+            <div class="margin-bottom-280px"></div>
         </section>
-        <div class="margin-bottom-280px"></div>
         <section class="commititem">
             <div class="slider" id="slider2">
                 <div class="sliderimgcontainer">
@@ -205,6 +227,52 @@
                     <img class="thumbnail active" src="../images/Drawings_Thumbnail.jpg" alt="Thumbnail 4" onclick="currentSlide('slider2', 0)">
                     <img class="thumbnail" src="../images/Drawings_Thumbnail.jpg" alt="Thumbnail 5" onclick="currentSlide('slider2', 1)">
                     <img class="thumbnail" src="../images/Drawings_Thumbnail.jpg" alt="Thumbnail 6" onclick="currentSlide('slider2', 2)">
+                </div>
+                <div class="margin-bottom-24px"></div>
+                <div class="hero-wrapper-two">
+                    <h2>Surprise Pack</h2>
+                    <!--<p class="margin-bottom-24px">Feature Not Yet Enabled</p>-->
+                </div>
+                <div>
+                    <h3>Price</h3>
+                    <div class="margin-bottom-24px"></div>
+                    <ul>
+                        <li><p class="margin-bottom-24px">IDK</p></li>
+                        <li><p class="margin-bottom-24px">IDK</p></li>
+                    </ul>
+                </div>
+            <div class="margin-bottom-280px"></div>
+        </section>
+        <section class="commititem">
+            <div class="slider" id="slider3">
+                <div class="sliderimgcontainer">
+                    <button class="arrow arrow-left" onclick="showSlide('slider3', currentIndexes['slider3'] - 1)">&#10094;</button>
+                    <div class="slides" id="slides3">
+                        <div class="slide">
+                            <a href="../images/Drawings_Thumbnail.jpg"
+                            data-pswp-width="1920" 
+                            data-pswp-height="1080" 
+                            target="_blank">
+                            <img src="../images/Drawings_Thumbnail.jpg" alt="Image 4"></a></div>
+                        <div class="slide">
+                            <a href="../images/Drawings_Thumbnail.jpg"
+                            data-pswp-width="1920" 
+                            data-pswp-height="1080" 
+                            target="_blank">
+                            <img src="../images/Drawings_Thumbnail.jpg" alt="Image 5"></a></div>
+                        <div class="slide">
+                            <a href="../images/Drawings_Thumbnail.jpg"
+                            data-pswp-width="1920" 
+                            data-pswp-height="1080" 
+                            target="_blank">
+                            <img src="../images/Drawings_Thumbnail.jpg" alt="Image 6"></a></div>
+                    </div>
+                    <button class="arrow arrow-right" onclick="showSlide('slider3', currentIndexes['slider3'] + 1)">&#10095;</button>
+                </div>
+                <div class="thumbnails">
+                    <img class="thumbnail active" src="../images/Drawings_Thumbnail.jpg" alt="Thumbnail 4" onclick="currentSlide('slider3', 0)">
+                    <img class="thumbnail" src="../images/Drawings_Thumbnail.jpg" alt="Thumbnail 5" onclick="currentSlide('slider3', 1)">
+                    <img class="thumbnail" src="../images/Drawings_Thumbnail.jpg" alt="Thumbnail 6" onclick="currentSlide('slider3', 2)">
                 </div>
                 <div class="margin-bottom-24px"></div>
                 <div class="hero-wrapper-two">

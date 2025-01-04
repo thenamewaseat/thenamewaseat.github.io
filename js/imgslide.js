@@ -2,7 +2,8 @@
 let lastslider;
 const currentIndexes = {
     slider1: 0,
-    slider2: 0
+    slider2: 0,
+    slider3: 0
 };
 const images = {
     slider1: [
@@ -11,6 +12,11 @@ const images = {
         "../images/app_icon.png"
     ],
     slider2: [
+        "../images/Drawings_Thumbnail.jpg",
+        "../images/Drawings_Thumbnail.jpg",
+        "../images/Drawings_Thumbnail.jpg"
+    ],
+    slider3: [
         "../images/Drawings_Thumbnail.jpg",
         "../images/Drawings_Thumbnail.jpg",
         "../images/Drawings_Thumbnail.jpg"
