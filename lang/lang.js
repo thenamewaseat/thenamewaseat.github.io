@@ -182,7 +182,7 @@ var linguJSON = {
             
         },
         {
-            "source": "UI/UX design",
+            "source": "UI/UX Design",
             "target_zh": "UI/UX設計",
             "target_ja": "UI/UX設計"
             
