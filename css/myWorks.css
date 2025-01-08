@@ -80,7 +80,7 @@
     transition-duration: 0.5s;
 }
 #f6{
-    background: black url("");
+    background: black url("../images/ui_thumbnail.jpg");
     background-size: cover;
     background-position: center;
     transition:ease;
