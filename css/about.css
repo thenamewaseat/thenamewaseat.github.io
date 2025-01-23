@@ -19,7 +19,8 @@ body.dark-mode #about{
 
 }
 #about img{
-    width: 300px;
+    /*width: 300px; old pic*/
+    width: 340px;
 }
 table td{
     /*display: flex;*/
