@@ -80,7 +80,12 @@
         </div>
     </header>
     <section id="about">
-        <img class="center" src="../images/modelsheet1.png" alt=""/>
+        <picture>
+            <source class="center" srcset="../images/modelsheet_light.png" media="(prefers-color-scheme: light)"/>
+            <source class="center" srcset="../images/modelsheet_dark.png" media="(prefers-color-scheme: dark)"/>
+            <img class="center" src="../images/modelsheet_light.png.png" alt=""/>
+        </picture>
+        
         <div class="hero-wrapper-two">
             <h1>Thenamewaseat</h1>
             <p class="margin-bottom-24px">A university student who likes to draw and code.</p>
