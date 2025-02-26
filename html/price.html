@@ -25,7 +25,6 @@
 </head>
 
 <body>
-    </script>
     <script type="module">
         import PhotoSwipeLightbox from '../js/photoswipe/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -46,49 +45,49 @@
             startAutoSlide();
         });
         lightbox.init();
-        </script>
-        <script type="module">
-            import PhotoSwipeLightbox from '../js/photoswipe/photoswipe-lightbox.esm.js';
-            const lightbox = new PhotoSwipeLightbox({
-              gallery: '#slides2',
-              children: 'a',
-              showAnimationDuration: 0,
-              hideAnimationDuration: 0,
-              pswpModule: () => import('../js/photoswipe/photoswipe.esm.js')
-            });
-            lightbox.on('beforeOpen', () => {
-                stopAutoSlide();
-                lenis.stop();
-                // photoswipe starts to open
-            });
-            lightbox.on('close', () => {
-                // PhotoSwipe starts to close, unbind most events here
-                lenis.start();
-                startAutoSlide();
-            });
-            lightbox.init();
-            </script>
-            <script type="module">
-                import PhotoSwipeLightbox from '../js/photoswipe/photoswipe-lightbox.esm.js';
-                const lightbox = new PhotoSwipeLightbox({
-                  gallery: '#slides3',
-                  children: 'a',
-                  showAnimationDuration: 0,
-                  hideAnimationDuration: 0,
-                  pswpModule: () => import('../js/photoswipe/photoswipe.esm.js')
-                });
-                lightbox.on('beforeOpen', () => {
-                    stopAutoSlide();
-                    lenis.stop();
-                    // photoswipe starts to open
-                });
-                lightbox.on('close', () => {
-                    // PhotoSwipe starts to close, unbind most events here
-                    lenis.start();
-                    startAutoSlide();
-                });
-                lightbox.init();
-                </script>
+    </script>
+    <script type="module">
+        import PhotoSwipeLightbox from '../js/photoswipe/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#slides2',
+            children: 'a',
+            showAnimationDuration: 0,
+            hideAnimationDuration: 0,
+            pswpModule: () => import('../js/photoswipe/photoswipe.esm.js')
+        });
+        lightbox.on('beforeOpen', () => {
+            stopAutoSlide();
+            lenis.stop();
+            // photoswipe starts to open
+        });
+        lightbox.on('close', () => {
+            // PhotoSwipe starts to close, unbind most events here
+            lenis.start();
+            startAutoSlide();
+        });
+        lightbox.init();
+    </script>
+    <script type="module">
+        import PhotoSwipeLightbox from '../js/photoswipe/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#slides3',
+            children: 'a',
+            showAnimationDuration: 0,
+            hideAnimationDuration: 0,
+            pswpModule: () => import('../js/photoswipe/photoswipe.esm.js')
+        });
+        lightbox.on('beforeOpen', () => {
+            stopAutoSlide();
+            lenis.stop();
+            // photoswipe starts to open
+        });
+        lightbox.on('close', () => {
+            // PhotoSwipe starts to close, unbind most events here
+            lenis.start();
+            startAutoSlide();
+        });
+        lightbox.init();
+    </script>
     <!--Translation-->
     <script src="../js/LingumaniaJS-Release/lingumania.min.js"></script>
     <script src="../lang/lang.js"></script>
