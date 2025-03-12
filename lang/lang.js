@@ -170,9 +170,9 @@ var linguJSON = {
             
         },
         {
-            "source": "Photography",
-            "target_zh": "攝影",
-            "target_ja": "撮影"
+            "source": "Video/Animation",
+            "target_zh": "影片/動畫",
+            "target_ja": "ビデオ／アニメーション"
             
         },
         {

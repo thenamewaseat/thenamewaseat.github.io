@@ -59,7 +59,7 @@
 }
 
 #f3{
-    background: black url("../images/photo_thumbnail.jpg");
+    background: black url("../images/splash1.png");
     background-size: cover;
     background-position: center;
     transition:ease;
