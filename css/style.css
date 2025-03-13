@@ -207,6 +207,9 @@ p.rem1{
     position: relative;
     text-align: center;
 }
+.vertAlign{
+    place-self: center;
+}
 .right{
     display:block;
     width:100%;
