@@ -222,7 +222,7 @@ p.rem1{
 
 .left{
     text-align: left;
-    margin-left:auto;
+    /*margin-right:auto;*/
 }
 
 .iconfab{
