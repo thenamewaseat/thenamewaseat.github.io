@@ -588,6 +588,9 @@ html.lenis {
     .footer-clean .item.social > a {
       margin-top:40px;
     }
+    table{
+        margin-left: 5%;
+    }
   }
   
   @media (max-width:767px) {
