@@ -19,8 +19,8 @@
 .margin-bottom-24px.left{
     text-align: left;
 }
-/*global*/
 
+/*global Start*/
 @media (prefers-color-scheme: dark) {
     body,#heading ,.gridwrapper{
         background-color: var(--d-bg) !important; /* Dark mode background */
@@ -262,6 +262,27 @@ p.margin-bottom-24px{
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(1rem);
 }
+.popupzone{
+    width: 250px;
+    height: 100px;
+    position: fixed;
+    right:25px;
+    bottom:0%;
+}
+.popupzone:hover{
+    .popup{
+        bottom:-50px;
+        transition: ease-out 0.5s;
+    }
+}
+.popup{
+    width: 250px;
+    position: fixed;
+    right:25px;
+    bottom:-250px;
+    transition: ease-out 0.5s;
+}
+/*global End*/
 
 /*left*/
 .marquee {
@@ -277,7 +298,6 @@ p.margin-bottom-24px{
       hsl(0 0% 0% / 1) 90%,
       hsl(0 0% 0% / 0)
     );
-    position: relative;
 }
 .marquee__item {
     --marquee-item-offset: max(
