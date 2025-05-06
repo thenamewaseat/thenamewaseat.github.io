@@ -16,6 +16,34 @@
     <link href="../favicon.ico" rel="icon" type="image/x-icon" />
     <link href="../images/app-icon.png" rel="apple-touch-icon" />
     <script src="../js/jquery.js" type="text/javascript"></script>
+    <link href="../js/lightslider/lightslider.css" rel="stylesheet" type="text/css" />
+    <script src="../js/lightslider/lightslider.js"></script>
+     <script>
+        $(document).ready(function() {
+           $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+
+       });
+       
+   </script>
+   <style>
+    ul{
+        list-style: none outside none;
+        padding-left: 0;
+        margin: 0;
+    }
+    </style>
+
     <script>
         $(function(){
             $("footer").load("../footer.html");
@@ -27,7 +55,7 @@
     <script type="module">
         import PhotoSwipeLightbox from '../js/photoswipe/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
-          gallery: '#desc1',
+          gallery: '#image-gallery',
           children: 'a',
           pswpModule: () => import('../js/photoswipe/photoswipe.esm.js')
         });
@@ -135,11 +163,21 @@
    
     <section class="hero-wrapper-two">
         <h1>Ideas</h1>
-        <div id="desc1">
-            <a href="../images/g-theDoor01.png" data-pswp-width="1253" data-pswp-height="724" target="_blank"><img src="../images/g-theDoor01.png" alt="Image 1"></a>
-            <a href="../images/g-theDoor02.png" data-pswp-width="1393" data-pswp-height="817" target="_blank"><img src="../images/g-theDoor02.png" alt="Image 1"></a>
-            <a href="../images/g-theDoor03.png" data-pswp-width="1193" data-pswp-height="750" target="_blank"><img src="../images/g-theDoor03.png" alt="Image 1"></a>
-            <a href="../images/g-theDoor04.png" data-pswp-width="1000" data-pswp-height="588" target="_blank"><img src="../images/g-theDoor04.png" alt="Image 1"></a>
+        <div class="clearfix" style="width:100%;max-width:700px;">
+            <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                <li data-thumb="../images/g-theDoor01.png">
+                    <a href="../images/g-theDoor01.png" data-pswp-width="1253" data-pswp-height="724" target="_blank"><img src="../images/g-theDoor01.png" alt="Image 1"></a>
+                </li>
+                <li data-thumb="../images/g-theDoor02.png">
+                    <a href="../images/g-theDoor02.png" data-pswp-width="1393" data-pswp-height="817" target="_blank"><img src="../images/g-theDoor02.png" alt="Image 1"></a>
+                </li>
+                <li data-thumb="../images/g-theDoor03.png">
+                    <a href="../images/g-theDoor03.png" data-pswp-width="1193" data-pswp-height="750" target="_blank"><img src="../images/g-theDoor03.png" alt="Image 1"></a>
+                </li>
+                <li data-thumb="../images/g-theDoor04.png">
+                    <a href="../images/g-theDoor04.png" data-pswp-width="1000" data-pswp-height="588" target="_blank"><img src="../images/g-theDoor04.png" alt="Image 1"></a>
+                </li>
+            </ul>
         </div>
         <div class="margin-bottom-72px"></div>
         <!--<p class="margin-bottom-24px">“A long time ago. There is a team of heroes. They fight with the biggest evil boss. And after a tough 

@@ -15,14 +15,66 @@
     <link href="../favicon.ico" rel="icon" type="image/x-icon" />
     <link href="../images/app-icon.png" rel="apple-touch-icon" />
     <script src="../js/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../js/photoswipe/photoswipe.css">
+    <link href="../js/lightslider/lightslider.css" rel="stylesheet" type="text/css" />
+    <script src="../js/lightslider/lightslider.js"></script>
+     <script>
+        $(document).ready(function() {
+           $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+
+       });
+       
+   </script>
+   <style>
+    ul{
+        list-style: none outside none;
+        padding-left: 0;
+        margin: 0;
+    }
+    </style>
+    
     <script>
         $(function(){
             $("footer").load("../footer.html");
         });
     </script>
+   
+
+
+
 </head>
 
 <body>
+    <script type="module">
+        import PhotoSwipeLightbox from '../js/photoswipe/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#image-gallery',
+          children: 'li',
+          showAnimationDuration: 0,
+          hideAnimationDuration: 0,
+          pswpModule: () => import('../js/photoswipe/photoswipe.esm.js')
+        });
+        lightbox.on('beforeOpen', () => {
+            lenis.stop();
+            // photoswipe starts to open
+        });
+        lightbox.on('close', () => {
+            // PhotoSwipe starts to close, unbind most events here
+            lenis.start();
+        });
+        lightbox.init();
+    </script>
     <!--Translation-->
     <script src="../js/LingumaniaJS-Release/lingumania.min.js"></script>
     <script src="../lang/lang.js"></script>
@@ -107,9 +159,14 @@
     </div>
     <section class="hero-wrapper-two">
         <h1>Gallery</h1>
-        <img src="../images/i_follyplan1.jpg">
-        <img src="../images/i-folly_01.png">
-        <img src="../images/i-folly_02.png">
+            <div class="clearfix" style="width:100%;max-width:700px;">
+                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                    <li data-thumb="../images/i_follyplan1.jpg"><a href="../images/i_follyplan1.jpg" style="height: 300px;" data-pswp-width="600" 
+                        data-pswp-height="600" target="_blank"><img src="../images/i_follyplan1.jpg" alt="Breads"/></a></li>
+                    <li data-thumb="../images/i-folly_01.png"><a href="../images/i-folly_01.png" target="_blank"><img src="../images/i-folly_01.png" alt="Oranges"/></a></li>
+                    <li data-thumb="../images/installation_thumbnail.jpg"><a href="../images/installation_thumbnail.jpg" target="_blank"><img src="../images/installation_thumbnail.jpg" alt="Wine, Cheese and Bread"/></a></li>
+                </ul>
+            </div>
         <p class="margin-bottom-24px"></p>
     </section>
 
@@ -127,8 +184,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="../js/webflow-script.js" type="text/javascript"></script>
     <div class="footer-clean">
-        <footer>
-        </footer>
+        <footer></footer>
     </div>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script> 
     <script src="../js/scroll.js"></script>
