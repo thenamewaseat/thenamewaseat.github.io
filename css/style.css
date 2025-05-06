@@ -263,22 +263,22 @@ p.margin-bottom-24px{
     -webkit-backdrop-filter: blur(1rem);
 }
 .popupzone{
-    width: 250px;
-    height: 100px;
+    width: 210px;
+    height: 60px;
     position: fixed;
-    right:25px;
+    right:5%;
     bottom:0%;
 }
 .popupzone:hover{
     .popup{
-        bottom:-50px;
+        bottom:-80px;
         transition: ease-out 0.5s;
     }
 }
 .popup{
-    width: 250px;
+    width: 200px;
     position: fixed;
-    right:25px;
+    right:5%;
     bottom:-250px;
     transition: ease-out 0.5s;
 }
