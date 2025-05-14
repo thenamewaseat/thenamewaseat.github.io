@@ -62,7 +62,7 @@
         background-color: var(--d-blocks) !important;
         color: var(--white);
       }
-      body #about{
+    body #about.about{
         background: url("../images/about_bg_dark.png");;
     }
     body .line,.dot{
