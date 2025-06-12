@@ -44,7 +44,7 @@ var linguJSON = {
             
         },
         {
-            "source": "Gallery",
+            "source": "Portfolio",
             "target_zh": "作品集",
             "target_ja": "ギャラリー"
             
