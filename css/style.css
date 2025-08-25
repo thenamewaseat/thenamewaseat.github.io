@@ -129,9 +129,9 @@ a:hover{
     text-decoration: none;
     color:#777668
 }
-.navitem{
+/*.navitem{
     width:120px;
-}
+}*/
 .targetlang,#currlanglink{
     display:block;
     text-align: center;
