@@ -204,7 +204,11 @@ var linguJSON = {
             "target_zh": "委託流程"
         },
         {
-            "source": "<b>*Must credit the Aritst of the drawings</b>",
+            "source": "Print for free Fan-made (Please seek for approval first)",
+            "target_zh": "印無料（請告知）"
+        },
+        {
+            "source": "<b>*Must credit the Aritst of the drawings if sharing in public</b>",
             "target_zh": "<b>*須標註作者</b>"
         },
         {
@@ -223,6 +227,11 @@ var linguJSON = {
             "source": "Icon",
             "target_zh": "頭像",
             "target_ja": "アイコン"
+        },
+        {
+            "source": "Surprise Pack",
+            "target_zh": "驚喜包",
+            "target_ja": "サプライズパッケージ"
         },
         {
             "source": "Illustration",
