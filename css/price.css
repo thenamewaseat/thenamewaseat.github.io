@@ -11,6 +11,12 @@
         object-fit: contain;
     }
 }
+#slider3 .slide{
+        img{
+            aspect-ratio: 16/9;
+            object-fit: contain;
+        }
+    }
 .sliderimgcontainer {
     position: relative;
     margin-right: auto;
@@ -137,7 +143,13 @@
     }
     #slider1 .slide{
         img{
-            max-height: 250px;
+            max-height: 185px;
+            object-fit: contain;
+        }
+    }
+    #slider3 .slide{
+        img{
+            aspect-ratio: 16/9;
             object-fit: contain;
         }
     }
