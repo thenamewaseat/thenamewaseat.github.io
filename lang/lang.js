@@ -198,7 +198,27 @@ var linguJSON = {
             "target_zh": "（頁面尚未完成，請參考以下PDF。）",
             "target_ja": "(未完成のページがありますので、下記PDFをご参照ください。）"
         },
-        /*About */
+        /*Pricing */
+        {
+            "source": "Procedure",
+            "target_zh": "委託流程"
+        },
+        {
+            "source": "<b>*Must credit the Aritst of the drawings</b>",
+            "target_zh": "<b>*須標註作者</b>"
+        },
+        {
+            "source": "<b>*All commissioned images are copyrighted by the author and may be included in portfolios and commission examples.</b>",
+            "target_zh": "<b>*所有委託圖片版權歸作者所有，並有可能放在作品集和委託範例中。</b>"
+        },
+        {
+            "source": "Commission Types",
+            "target_zh": "委託類型"
+        },
+        {
+            "source": "Form",
+            "target_zh": "委託表單"
+        },
         {
             "source": "Icon",
             "target_zh": "頭像",
