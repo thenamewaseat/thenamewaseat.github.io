@@ -46,11 +46,20 @@
         margin: 0;
     }
     </style>
+    
     <script>
         $(function(){
             $("footer").load("/footer.html");
         });
     </script>
+    <!--<script>
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>-->
     
 </head>
 
@@ -243,6 +252,7 @@
     <div class="footer-clean">
         <footer>
         </footer>
+        
     </div>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script> 
     <script src="../js/scroll.js"></script>
