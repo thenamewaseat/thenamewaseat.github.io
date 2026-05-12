@@ -626,6 +626,7 @@ html.lenis {
     opacity:0.6;
   }
 
+/*Entrance Animation*/
   /* 1. Define the entrance animation */
 @keyframes fadeInBlock {
   from { opacity: 0; transform: translateY(50px); }
