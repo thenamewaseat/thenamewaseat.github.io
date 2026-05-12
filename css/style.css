@@ -625,6 +625,21 @@ html.lenis {
     font-size:13px;
     opacity:0.6;
   }
+
+  /* 1. Define the entrance animation */
+@keyframes fadeInBlock {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 2. Apply it to your blocks */
+.fadein-blk {
+  animation: fadeInBlock linear both;
+  /* Link animation to the element entering the viewport */
+  animation-timeline: view();
+  /* Define when the animation starts and ends */
+  animation-range: entry 10% cover 40%;
+}
   
   /* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
   
