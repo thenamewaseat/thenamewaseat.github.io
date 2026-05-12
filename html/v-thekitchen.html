@@ -2,6 +2,7 @@
 <html data-wf-page="6662d4eba7df61da51ea2f29" data-wf-site="6662d4eba7df61da51ea2f22">
 
 <head>
+    
     <meta charset="utf-8" />
     <title>Thenamewaseat</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -19,6 +20,7 @@
     <script src="../js/jquery.js" type="text/javascript"></script>
     <link href="../js/lightslider/lightslider.css" rel="stylesheet" type="text/css" />
     <script src="../js/lightslider/lightslider.js"></script>
+
     <script>
         $(document).ready(function() {
            $('#image-gallery').lightSlider({
@@ -46,9 +48,10 @@
     </style>
     <script>
         $(function(){
-            $("footer").load("../footer.html");
+            $("footer").load("/footer.html");
         });
     </script>
+    
 </head>
 
 <body>
@@ -72,7 +75,22 @@
     <!--Translation-->
     <script src="../js/LingumaniaJS-Release/lingumania.min.js"></script>
     <script src="../lang/lang.js"></script>
-
+    <header id="header" class="header"  style=" background-color: transparent;" >
+        <!--<iframe src="/header.html" style="width: 100%;"></iframe>-->
+    </header>
+    <!--<script>
+        $(function(){
+            $("header").load("/header.html");
+        });
+    </script>
+    <script>
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>-->
     <header id="header" class="header">
         <div class="navbar-no-shadow">
             <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease"
@@ -115,10 +133,10 @@
     <section class="imgtop" style="height:500px">
         <div class="container-2"></div>
         <div class="hero-wrapper-two">
-            <h1 class="bannertxt">FYP - Let's Make a Game</h1>
+            <h1 class="bannertxt">The Kitchen</h1>
             <!--<h1 class="bannertxt">(In Progress)</h1>-->
         </div>
-        <img src="../images/blogs/fyp-2026/swimsuit.jpg" class="bgbanner">
+        <img src="../images/thekitchen.jpg" class="bgbanner">
     </section>
     <div class="margin-bottom-24px"></div>
     <div class="divider">
@@ -131,15 +149,15 @@
         <table>
             <tr>
                 <td class="right"><p class="margin-bottom-24px"><b>Tags: </b></p></td>
-                <td style="padding-left:15px"><p class="margin-bottom-24px left">3D Animation, Blender, Krita, Maya 2025, Davinci Resolve</p></td>
+                <td style="padding-left:15px"><p class="margin-bottom-24px left">3D Animation, Maya 2026, Davinci Resolve, RenderMan</p></td>
             </tr>
             <tr>
                 <td class="right"><p class="margin-bottom-24px"><b>Type: </b></td>
-                <td style="padding-left:15px"><p class="margin-bottom-24px left">2 People Project (FYP)</p></td>
+                <td style="padding-left:15px"><p class="margin-bottom-24px left">2 People Project</p></td>
             </tr>
             <tr>
                 <td class="right"><p class="margin-bottom-24px"><b>Role: </b></td>
-                <td style="padding-left:15px"><p class="margin-bottom-24px left">Animator, Model Builder</p></td>
+                <td style="padding-left:15px"><p class="margin-bottom-24px left">Texturing, UV cutting</p></td>
             </tr>
         </table>
     </section>
@@ -163,7 +181,7 @@
 
     <section class="hero-wrapper-two">
         <h1>Ideas</h1>
-        <p class="margin-bottom-24px left">The objective of this project is to create a contemporary industry-level Japanese 3D anime production. The story follows two girls (a game designer and a marketing associate) with different focus on about making a game. The storyline will follow their brainstorming of topics in a new game project and visualize their game ideas. Our project will focus on character interactions in game development rather than a complex plot. In short, we aim to promote "making a game" through a humorous story about game development.</p>
+        <p class="margin-bottom-24px left">The objective of this project is to create a good kitchen with proper texture and lighting, with a simple story.</p>
     </section>
 
     <p class="margin-bottom-24px"></p><br>
@@ -176,38 +194,38 @@
         <h1>Gallery</h1>
         <div class="clearfix" style="width:100%;max-width:700px;">
             <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                <li data-thumb="../images/v-letsmakeagame/Frame-01.jpg">
-                    <a href="../images/v-letsmakeagame/Frame-01.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-letsmakeagame/Frame-01.jpg" alt="Image 1"></a>
+                <li data-thumb="../images/v-thekitchen/Frame-01.jpg">
+                    <a href="../images/v-thekitchen/Frame-01.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-thekitchen/Frame-01.jpg" alt="Image 1"></a>
                 </li>
-                <li data-thumb="../images/v-letsmakeagame/Frame-02.jpg">
-                    <a href="../images/v-letsmakeagame/Frame-02.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-letsmakeagame/Frame-02.jpg" alt="Image 1"></a>
+                <li data-thumb="../images/v-thekitchen/Frame-02.jpg">
+                    <a href="../images/v-thekitchen/Frame-02.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-thekitchen/Frame-02.jpg" alt="Image 1"></a>
                 </li>
-                <li data-thumb="../images/v-letsmakeagame/Frame-03.jpg">
-                    <a href="../images/v-letsmakeagame/Frame-03.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-letsmakeagame/Frame-03.jpg" alt="Image 1"></a>
+                <li data-thumb="../images/v-thekitchen/Frame-03.jpg">
+                    <a href="../images/v-thekitchen/Frame-03.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-thekitchen/Frame-03.jpg" alt="Image 1"></a>
                 </li>
-                <li data-thumb="../images/v-letsmakeagame/Frame-04.jpg">
-                    <a href="../images/v-letsmakeagame/Frame-04.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-letsmakeagame/Frame-04.jpg" alt="Image 1"></a>
+                <li data-thumb="../images/v-thekitchen/Frame-04.jpg">
+                    <a href="../images/v-thekitchen/Frame-04.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-thekitchen/Frame-04.jpg" alt="Image 1"></a>
                 </li>
-                <li data-thumb="../images/v-letsmakeagame/Frame-05.jpg">
-                    <a href="../images/v-letsmakeagame/Frame-05.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-letsmakeagame/Frame-05.jpg" alt="Image 1"></a>
+                <li data-thumb="../images/v-thekitchen/Frame-05.jpg">
+                    <a href="../images/v-thekitchen/Frame-05.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-thekitchen/Frame-05.jpg" alt="Image 1"></a>
                 </li>
-                <li data-thumb="../images/v-letsmakeagame/Frame-06.jpg">
-                    <a href="../images/v-letsmakeagame/Frame-06.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-letsmakeagame/Frame-06.jpg" alt="Image 1"></a>
+                <li data-thumb="../images/v-thekitchen/Frame-06.jpg">
+                    <a href="../images/v-thekitchen/Frame-06.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-thekitchen/Frame-06.jpg" alt="Image 1"></a>
                 </li>
-                <li data-thumb="../images/v-letsmakeagame/Frame-07.jpg">
-                    <a href="../images/v-letsmakeagame/Frame-07.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-letsmakeagame/Frame-07.jpg" alt="Image 1"></a>
+                <li data-thumb="../images/v-thekitchen/Frame-07.jpg">
+                    <a href="../images/v-thekitchen/Frame-07.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-thekitchen/Frame-07.jpg" alt="Image 1"></a>
                 </li>
-                <li data-thumb="../images/v-letsmakeagame/Frame-08.jpg">
-                    <a href="../images/v-letsmakeagame/Frame-08.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-letsmakeagame/Frame-08.jpg" alt="Image 1"></a>
+                <li data-thumb="../images/v-thekitchen/Frame-08.jpg">
+                    <a href="../images/v-thekitchen/Frame-08.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-thekitchen/Frame-08.jpg" alt="Image 1"></a>
                 </li>
-                <li data-thumb="../images/v-letsmakeagame/Frame-09.jpg">
-                    <a href="../images/v-letsmakeagame/Frame-09.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-letsmakeagame/Frame-09.jpg" alt="Image 1"></a>
+                <li data-thumb="../images/v-thekitchen/Frame-09.jpg">
+                    <a href="../images/v-thekitchen/Frame-09.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-thekitchen/Frame-09.jpg" alt="Image 1"></a>
                 </li>
-                <li data-thumb="../images/v-letsmakeagame/Frame-10.jpg">
-                    <a href="../images/v-letsmakeagame/Frame-10.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-letsmakeagame/Frame-10.jpg" alt="Image 1"></a>
+                <li data-thumb="../images/v-thekitchen/Frame-10.jpg">
+                    <a href="../images/v-thekitchen/Frame-10.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-thekitchen/Frame-10.jpg" alt="Image 1"></a>
                 </li>
-                <li data-thumb="../images/v-letsmakeagame/Frame-11.jpg">
-                    <a href="../images/v-letsmakeagame/Frame-11.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-letsmakeagame/Frame-11.jpg" alt="Image 1"></a>
+                <li data-thumb="../images/v-thekitchen/Frame-11.jpg">
+                    <a href="../images/v-thekitchen/Frame-11.jpg" data-pswp-width="2667" data-pswp-height="1500" target="_blank"><img src="../images/v-thekitchen/Frame-11.jpg" alt="Image 1"></a>
                 </li>
             </ul>
         </div>
