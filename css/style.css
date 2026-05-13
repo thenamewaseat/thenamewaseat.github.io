@@ -629,8 +629,8 @@ html.lenis {
 /*Entrance Animation*/
   /* 1. Define the entrance animation */
 @keyframes fadeInBlock {
-  from { opacity: 0; transform: translateY(50px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(50px); filter: blur(2px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0px);}
 }
 
 /* 2. Apply it to your blocks */
@@ -639,8 +639,20 @@ html.lenis {
   /* Link animation to the element entering the viewport */
   animation-timeline: view();
   /* Define when the animation starts and ends */
-  animation-range: entry 10% cover 40%;
+  animation-range: entry 5% cover 20%;
 }
   
   /* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
+
+@keyframes slideload{
+    0%{
+        transform: translate3d(0px, 90px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); filter: blur(10px); opacity: 0; transform-style: preserve-3d;
+    } 
+    100%{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); filter: blur(0px); opacity: 1; transform-style: preserve-3d;
+    } 
+}
+.sideloadanim{
+    animation: 0.6s ease-out 0s 1 slideload;
+}
   
