@@ -46,17 +46,9 @@
     </script>
     <script src="js/jquery.js" type="text/javascript"></script>
     <script>
-       $(function(){
-        // Load the footer, and pass a callback function as the second parameter
-        $("footer").load("../footer.html", function() {
-            
-            // Once the footer is safely in the DOM, trigger the translation again
-            if (typeof window.retranslateLingumania === "function") {
-                window.retranslateLingumania();
-            }
-            
+        $(function(){
+            $("footer").load("../footer.html");
         });
-    });
     </script>
     
 </head>
@@ -192,41 +184,13 @@
         </div>
     </div>
     <div class="footer-clean">
-        <footer></footer>
+        <footer id="footer"></footer>
     </div>
     <script src="js/webflow-script.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script> 
     <script src="./js/scroll.js"></script>
     <script src="/js/translatejs/translate.js"></script>
     <script src="/js/translatejs/translate_execute.js"></script>
-    <script>
-        
-        
-        // 3. Listen for language changes to update the URL dynamically
-		/*translate.listener.renderTaskFinish = function() {
-			var currentLang = translate.language.getCurrent();
-			console.log('Current language after render:', currentLang);
-			var url = new URL(window.location.href);
-			
-			// Only update if the parameter is different to avoid redundant history states
-			if (url.searchParams.get('lang') !== currentLang) {
-				url.searchParams.set('lang', currentLang);
-				// This updates the URL in the address bar without reloading the page
-				window.history.pushState({}, '', url);
-			}
-		};*/
-
-		// 4. Ensure all local links on the page keep the ?lang= parameter
-		/*document.addEventListener('click', function(e) {
-			var target = e.target.closest('a');
-			if (target && target.href && target.href.startsWith(window.location.origin)) {
-				var currentLang = translate.language.getCurrent();
-				var url = new URL(target.href);
-				url.searchParams.set('lang', currentLang);
-				target.href = url.href;
-			}
-		}, true);*/
-    </script>
 </body>
 
 </html>
