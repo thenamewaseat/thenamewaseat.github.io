@@ -14,7 +14,7 @@
 })*/
 // LENIS SMOOTH SCROLL
 let lenis;
-    if (Webflow.env("editor") === undefined) {
+    if (1>0) {
     lenis = new Lenis({
         lerp: 0.12,
         wheelMultiplier: 0.9,
