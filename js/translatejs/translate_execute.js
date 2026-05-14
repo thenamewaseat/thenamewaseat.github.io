@@ -1,6 +1,6 @@
 
 	
-document.addEventListener('DOMContentLoaded', function () { //设置机器翻译服务通道，相关说明参考 http://translate.zvo.cn/545867.html
+ //设置机器翻译服务通道，相关说明参考 http://translate.zvo.cn/545867.html
 	translate.service.use('client.edge');
 	translate.language.setLocal('english'); 
     translate.listener.start(); //开启页面元素动态监控，js改变的内容也会被翻译，参考文档： http://translate.zvo.cn/4067.html
@@ -170,7 +170,6 @@ document.addEventListener('DOMContentLoaded', function () { //设置机器翻译
 				window.history.pushState({}, '', url);
 			}
 		});*/
-});
 
 document.addEventListener('click', function(e) {
     var target = e.target.closest('a');
