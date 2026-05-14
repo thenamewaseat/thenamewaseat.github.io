@@ -209,18 +209,34 @@
                 .then(data => {
                     document.getElementById('header').innerHTML = data;
                     const newScript = document.createElement('script');
+                    const new2Script = document.createElement('script');
+                    const new3Script = document.createElement('script');
                     newScript.src = '../js/translatejs/translate_execute.js';
+                    new2Script.src = '../js/webflow-script.js';
+                    new3Script.src = '../js/scroll.js';
                     newScript.onload = () => {
                         console.log('Second script loaded and ready!');
                         // If the second script has a function you need to run, do it here:
                         // initSecondScript();
                     };
+                    new2Script.onload = () => {
+                        console.log('Second script loaded and ready!');
+                        // If the second script has a function you need to run, do it here:
+                        // initSecondScript();
+                    };
+                    new3Script.onload = () => {
+                        console.log('Second script loaded and ready!');
+                        // If the second script has a function you need to run, do it here:
+                        // initSecondScript();
+                    };
                     document.body.appendChild(newScript);
+                    document.body.appendChild(new2Script);
+                    document.body.appendChild(new3Script);
                 })
     </script>
-    <script defer src="js/webflow-script.js" type="text/javascript"></script>
+    <!--<script defer src="js/webflow-script.js" type="text/javascript"></script>-->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script> 
-    <script defer src="./js/scroll.js"></script>
+    <!--<script defer src="./js/scroll.js"></script>-->
     
 </body>
 
