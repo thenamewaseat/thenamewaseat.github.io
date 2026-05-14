@@ -218,15 +218,25 @@
     </div>
     <script>
         fetch('../header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+                const newScript = document.createElement('script');
+                newScript.src = '../js/translatejs/translate_execute.js';
+                newScript.onload = () => {
+                    console.log('Second script loaded and ready!');
+                    // If the second script has a function you need to run, do it here:
+                    // initSecondScript();
+                };
+                document.body.appendChild(newScript);
+            })
+
+                
     </script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script> 
     <script src="../js/scroll.js"></script>
     <script src="../js/translatejs/translate.js"></script>
-    <script defer src="../js/translatejs/translate_execute.js"></script>
+    <!--<script defer src="../js/translatejs/translate_execute.js"></script>-->
 </body>
 
 </html>
