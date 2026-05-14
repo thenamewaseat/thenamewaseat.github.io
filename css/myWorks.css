@@ -201,7 +201,7 @@
     }
 }
 @media screen and (max-width: 764px) {
-    .gridwrapper {
+    .gridwrapper1 {
         width: 97%;
         margin: 50px auto;
         display: grid;
