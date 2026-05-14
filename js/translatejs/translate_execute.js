@@ -1,8 +1,8 @@
 
 	
-document.addEventListener('load', function () {
-	translate.service.use('client.edge'); //设置机器翻译服务通道，相关说明参考 http://translate.zvo.cn/545867.html
-	//translate.language.setLocal('english'); 
+document.addEventListener('DOMContentLoaded', function () { //设置机器翻译服务通道，相关说明参考 http://translate.zvo.cn/545867.html
+	translate.service.use('client.edge');
+	translate.language.setLocal('english'); 
     translate.listener.start(); //开启页面元素动态监控，js改变的内容也会被翻译，参考文档： http://translate.zvo.cn/4067.html
     //translate.offline.fullExtract.isUse = true;
     translate.selectLanguageTag.languages = 'english,chinese_traditional,japanese'; //设置语言选项，逗号分隔，相关说明参考 http://translate.zvo.cn/545867.html
@@ -69,7 +69,7 @@ document.addEventListener('load', function () {
 	var currentLang = translate.language.getCurrent();
 	console.log('Current language after render:', currentLang);
 	var url = new URL(window.location.href);
-	if(currentLang=='chinese_traditional'){
+	/*if(currentLang=='chinese_traditional'){
 		document.getElementById('currentlang').textContent = '繁體中文';
 	}
 	else if(currentLang=='english'){
@@ -77,7 +77,7 @@ document.addEventListener('load', function () {
 	}
 	else if(currentLang=='japanese'){
 		document.getElementById('currentlang').textContent = '日本語';
-	}
+	}*/
 			
 			// Only update if the parameter is different to avoid redundant history states
 	if (url.searchParams.get('lang') !== currentLang) {

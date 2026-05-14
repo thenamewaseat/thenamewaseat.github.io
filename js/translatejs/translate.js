@@ -820,7 +820,7 @@ var translate = {
 		var currentLang = translate.language.getCurrent();
 		console.log('Current language after render:', currentLang);
 		var url = new URL(window.location.href);
-		if(currentLang=='chinese_traditional'){
+		/*if(currentLang=='chinese_traditional'){
 			document.getElementById('currentlang').textContent = '繁體中文';
 		}
 		else if(currentLang=='english'){
@@ -828,7 +828,7 @@ var translate = {
 		}
 		else if(currentLang=='japanese'){
 			document.getElementById('currentlang').textContent = '日本語';
-		}
+		}*/
 		
 			
 		// Only update if the parameter is different to avoid redundant history states
@@ -3807,7 +3807,7 @@ var translate = {
 				translate.translateRequest[uuid][lang].executeFinish = 1; //1是执行完毕
 				translate.translateRequest[uuid][lang].stoptime = Math.floor(Date.now() / 1000);
 				setTimeout(function(){
-					translate.waitingExecute.isAllExecuteFinish(uuid, responseData.from, responseData.to, 1, '');
+					//translate.waitingExecute.isAllExecuteFinish(uuid, responseData.from, responseData.to, 1, '');
 				},5);
 			}, function(xhr){
 				translate.translateRequest[uuid][xhr.data.from].executeFinish = 1; //1是执行完毕
@@ -8440,7 +8440,7 @@ var translate = {
 				var to = translate.service.edge.language.getMap()[data.from];
 				//var transUrl = translate.service.edge.api.translate.replace('{from}',from).replace('{to}',to);
 				//disabled edge auto translate
-				var transUrl = translate.service.edge.api.translate.replace('{from}',from).replace('{to}',to);
+				var transUrl = translate.service.edge.api.translate.replace('{from}',from).replace('{to}',from);
 
 				//如果翻译量大，要拆分成多次翻译请求
 				for(var tai = 0; tai<translateTextArray.length; tai++){
@@ -8456,7 +8456,7 @@ var translate = {
 						d.info = 'SUCCESS';
 						d.result = 1;
 						d.from = data.from;
-						d.to = data.to;
+						d.to = data.from;
 						d.text = [];
 						for(var t = 0; t < result.length; t++){
 							d.text.push(result[t].translations[0].text);

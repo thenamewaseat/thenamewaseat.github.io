@@ -20,14 +20,14 @@
     text-align: left;
 }
 
-#translate{
+/*#translate{
     height: 0px;
     visibility: hidden;
 }
 #translateSelectLanguage{
     visibility: hidden;
     height: 0px;
-}
+}*/
 
 /*global Start*/
 @media (prefers-color-scheme: dark) {
