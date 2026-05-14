@@ -20,6 +20,10 @@
     text-align: left;
 }
 
+#translate{
+    visibility: hidden;
+}
+
 /*global Start*/
 @media (prefers-color-scheme: dark) {
     body,#heading ,.gridwrapper{

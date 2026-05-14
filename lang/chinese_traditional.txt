@@ -1,0 +1,27 @@
+offline.append('chinese_traditional',`
+English=英文
+About=關於
+Blogs=部落格
+World of Foley Arist=Foley Arist 的世界
+Wanna see Moire?=Wanna see Moire?
+Thenamewaseat=Thenamewaseat
+Arduino=Arduino
+Pricing=定價
+Makey Makey/ Unity=麥基·麥基/Unity（大團結）
+Portfolio=作品集
+Get{\\n}                                        Started=取得{\\n}                                        開始
+Installations=安裝
+Acrade Game controller=Acrade 遊戲控制器
+English=英文
+Powered by Lingumania=由 Lingumania 提供動力
+Translated Websites=翻譯網站
+中文=中文
+About=關於
+Thenamewaseat © 2023-2026 =2023-2026 年度的議席©名稱
+Illustration=插圖
+All Right Reserved=好的，已預訂
+Pricing=定價
+My Works=我的作品
+My Self=我的自我
+Portfolio=作品集
+`);
