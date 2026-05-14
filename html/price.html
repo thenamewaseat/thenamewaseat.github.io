@@ -8,6 +8,7 @@
     <meta content="Webflow" name="generator" />
 
     <script rel="preload" src="../js/translatejs/translate.js"></script>
+    <script rel="preload" src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
     <link href="../header.html" rel="preload" as="fetch" crossorigin="anonymous">
     <link href="../footer.html" rel="preload" as="fetch" crossorigin="anonymous">
     <link href="../css/webflow-style.css" rel="stylesheet" type="text/css" />
@@ -269,9 +270,11 @@
                     const newScript = document.createElement('script');
                     const new2Script = document.createElement('script');
                     const new3Script = document.createElement('script');
+                    const new4Script = document.createElement('script');
                     newScript.src = '../js/translatejs/translate_execute.js';
                     new2Script.src = '../js/webflow-script.js';
-                    new3Script.src = '../js/scroll.js';
+                    new3Script.src = 'https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js';
+                    new4Script.src = '../js/scroll.js';
                     newScript.onload = () => {
                         console.log('Second script loaded and ready!');
                         // If the second script has a function you need to run, do it here:
@@ -287,12 +290,17 @@
                         // If the second script has a function you need to run, do it here:
                         // initSecondScript();
                     };
+                    new4Script.onload = () => {
+                        console.log('Fourth script loaded and ready!');
+                        // If the fourth script has a function you need to run, do it here:
+                        // initFourthScript();
+                    };
                     document.body.appendChild(newScript);
                     document.body.appendChild(new2Script);
                     document.body.appendChild(new3Script);
+                    document.body.appendChild(new4Script);
                 })
     </script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
     <script src="../js/imgslide.js" type="text/javascript"></script>
 </body>
 
