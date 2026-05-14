@@ -16,20 +16,26 @@
 		Blogs=部落格
 		Portfolio=作品集
 		Pricing=價目表
+		Procedure=委託流程
+		Commission Types=委託類型
+		Form=委託表單
 		About=關於
 		Illustration=插圖
 
 		All Right Reserved=版權所有
 	`);
 	translate.offline.append('japanese',`
-			About=紹介
-			Blogs=ブログ
-			Portfolio=ギャラリー
-			Pricing=価格
-			About=紹介
-			Illustration=絵画
+		About=紹介
+		Blogs=ブログ
+		Portfolio=ギャラリー
+		Pricing=価格
+		Procedure=委託の流れ
+		Commission Types=委託の種類
+		Form=委託フォーム
+		About=紹介
+		Illustration=絵画
 			
-			All Right Reserved=版權所有
+		All Right Reserved=著作権所有
 	`);
 
 	//index
@@ -90,12 +96,25 @@
 		Others=その他
 	`);
 
+	//commision
 	translate.offline.append('chinese_traditional',`
-			
-			`);
+		Icon=頭像
+		Surprise Pack=驚喜包
+		Illustration=插畫
+		Terms of use=使用規範
+		Private Commision=私人委託
+		Print for free Fan-made (Please seek for approval first)=印無料（請告知）
+		*Must credit the Aritst of the drawings if sharing in public=*須標註作者
+		*All commissioned images are copyrighted by the author and may be included in portfolios and commission examples.=*所有委託圖片版權歸作者所有，並有可能放在作品集和委託範例中。
+	`);
 	translate.offline.append('japanese',`
+		Icon=アイコン
+		Surprise Pack=サプライズパッケージ
+		Illustration=イラスト
+		Terms of use=利用規約
+		Private Commision=私人委託
 		
-			`);
+	`);
     translate.execute();//完成翻译初始化，进行翻译
 	translate.language.setUrlParamControl('lang');
 	var currentLang = translate.language.getCurrent();
