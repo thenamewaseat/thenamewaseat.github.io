@@ -1,6 +1,6 @@
 
 	
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('load', function () {
 	translate.service.use('client.edge'); //设置机器翻译服务通道，相关说明参考 http://translate.zvo.cn/545867.html
 	//translate.language.setLocal('english'); 
     translate.listener.start(); //开启页面元素动态监控，js改变的内容也会被翻译，参考文档： http://translate.zvo.cn/4067.html
@@ -101,6 +101,16 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});*/
 });
+
+document.addEventListener('click', function(e) {
+    var target = e.target.closest('a');
+    if (target && target.href && target.href.startsWith(window.location.origin)) {
+        var currentLang = translate.language.getCurrent();
+        var url = new URL(target.href);
+        url.searchParams.set('lang', currentLang);
+        target.href = url.href;
+    }
+}, true);
 
 function updatelang(){
 	var currentLang = translate.language.getCurrent();
