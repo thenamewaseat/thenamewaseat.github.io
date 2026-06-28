@@ -7,8 +7,6 @@
     //translate.offline.fullExtract.isUse = true;
     translate.selectLanguageTag.languages = 'english,chinese_traditional,japanese'; //设置语言选项，逗号分隔，相关说明参考 http://translate.zvo.cn/545867.html
     translate.selectLanguageTag.refreshRender(); //刷新翻译结果，
-		
-	//translate.ignore.tag.push('div');
 
 	//header & footer
 	translate.offline.append('chinese_traditional',`
@@ -117,41 +115,9 @@
 	`);
     translate.execute();//完成翻译初始化，进行翻译
 	translate.language.setUrlParamControl('lang');
-	var currentLang = translate.language.getCurrent();
-	console.log('Current language after render:', currentLang);
-	var url = new URL(window.location.href);
-	/*if(currentLang=='chinese_traditional'){
-		document.getElementById('currentlang').textContent = '繁體中文';
-	}
-	else if(currentLang=='english'){
-		document.getElementById('currentlang').textContent = 'English';
-	}
-	else if(currentLang=='japanese'){
-		document.getElementById('currentlang').textContent = '日本語';
-	}*/
-			
-			// Only update if the parameter is different to avoid redundant history states
-	if (url.searchParams.get('lang') !== currentLang) {
-		url.searchParams.set('lang', currentLang);
-		// This updates the URL in the address bar without reloading the page
-        //window.location.reload();
-		window.history.pushState({}, '', url);
-	}
+	updatelang();
 
-		/*document.addEventListener('click', function(e) {
-			var currentLang = translate.language.getCurrent();
-			console.log('Current language after render:', currentLang);
-			var url = new URL(window.location.href);
-			
-			// Only update if the parameter is different to avoid redundant history states
-			if (url.searchParams.get('lang') !== currentLang) {
-				url.searchParams.set('lang', currentLang);
-				// This updates the URL in the address bar without reloading the page
-                //window.location.reload();
-				window.history.pushState({}, '', url);
-			}
-		});*/
-
+// Update the URL parameter when a link is clicked
 document.addEventListener('click', function(e) {
     var target = e.target.closest('a');
     if (target && target.href && target.href.startsWith(window.location.origin)) {
@@ -162,6 +128,7 @@ document.addEventListener('click', function(e) {
     }
 }, true);
 
+// Update the URL parameter when the language changes
 function updatelang(){
 	var currentLang = translate.language.getCurrent();
 	console.log('Current language after render:', currentLang);

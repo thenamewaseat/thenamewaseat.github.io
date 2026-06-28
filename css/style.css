@@ -50,6 +50,9 @@ select option{
         .w-dropdown-btn, .w-dropdown-toggle, .w-dropdown-link {
             color: var(--d-font);
         }
+        .nav-dropdown-link-2.w-dropdown-link.w--current{
+            color: #e3f300;
+        }
         .nav-dropdown-list-2 {
             background-color: var(--black);
     
