@@ -29,6 +29,9 @@ select option{
     background-color: #ffffff;
     color: #000000;
 }
+#w-dropdown-toggle-1{
+    padding-right: 10px;
+}
 
 
 /*global Start*/

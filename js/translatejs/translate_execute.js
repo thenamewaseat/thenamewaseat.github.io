@@ -100,8 +100,12 @@
 		Surprise Pack=驚喜包
 		Illustration=插畫
 		Terms of use=使用規範
+		Read before commission=委託前請先閱讀
 		Private Commision=私人委託
 		Print for free Fan-made (Please seek for approval first)=印無料（請告知）
+		Add text, filter or crop image=加入文字、套用濾鏡或裁剪圖片
+		Distribute content for profit-making=以營利為目的的內容發佈
+		Any form of editing that is not mentioned above=以上未提及的任何形式的編輯
 		*Must credit the Aritst of the drawings if sharing in public=*須標註作者
 		*All commissioned images are copyrighted by the author and may be included in portfolios and commission examples.=*所有委託圖片版權歸作者所有，並有可能放在作品集和委託範例中。
 	`);
@@ -110,8 +114,14 @@
 		Surprise Pack=サプライズパッケージ
 		Illustration=イラスト
 		Terms of use=利用規約
+		Read before commission=委託前にお読みください
 		Private Commision=私人委託
-		
+		Print for free Fan-made (Please seek for approval first)=無料で印刷可能 ファン制作（事前に許可を得てください）
+		Add text, filter or crop image=テキスト、フィルター、画像のトリミングを追加する
+		Distribute content for profit-making=収益化を目的としたコンテンツの配信
+		Any form of editing that is not mentioned above=上記に記載されていない編集行為
+		*Must credit the Aritst of the drawings if sharing in public=*作成者を明記すること
+		*All commissioned images are copyrighted by the author and may be included in portfolios and commission examples.=*ご依頼いただいた画像の著作権はすべて作者に帰属し、ポートフォリオや依頼事例として掲載される場合があります。
 	`);
     translate.execute();//完成翻译初始化，进行翻译
 	translate.language.setUrlParamControl('lang');
