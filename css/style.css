@@ -32,6 +32,9 @@ select option{
 #w-dropdown-toggle-1{
     padding-right: 10px;
 }
+.bold{
+    font-weight: bold;
+}
 
 
 /*global Start*/
