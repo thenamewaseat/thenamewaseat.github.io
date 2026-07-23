@@ -2207,7 +2207,7 @@ body {
 }
 
 .nav-dropdown-toggle:hover {
-  color: rgba(26, 27, 31, .75);
+  color: #777668;
 }
 
 .nav-dropdown-toggle:focus-visible {
@@ -2374,7 +2374,7 @@ body {
 }
 
 .nav-dropdown-toggle-2:hover {
-  color: rgba(26, 27, 31, .75);
+  color: #777668;
 }
 
 .nav-dropdown-toggle-2:focus-visible {
