@@ -311,27 +311,43 @@ p.margin-bottom-24px{
 /*left*/
 .marquee {
     display: flex;
-    block-size: var(--marquee-item-height);
-    max-inline-size: var(--marquee-max-width);
+    /* 1. Replace logical properties with standard properties */
+    height: var(--marquee-item-height);
+    max-width: var(--marquee-max-width, 100%);
     overflow-x: hidden;
     position: relative;
+    
+    /* 2. Add WebKit prefix and use legacy color syntax (rgba instead of space-separated hsl) */
+    -webkit-mask-image: -webkit-linear-gradient(
+        left,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 10%,
+        rgba(0, 0, 0, 1) 90%,
+        rgba(0, 0, 0, 0)
+    );
     mask-image: linear-gradient(
-      to right,
-      hsl(0 0% 0% / 0),
-      hsl(0 0% 0% / 1) 10%,
-      hsl(0 0% 0% / 1) 90%,
-      hsl(0 0% 0% / 0)
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 10%,
+        rgba(0, 0, 0, 1) 90%,
+        rgba(0, 0, 0, 0)
     );
 }
+
 .marquee__item {
-    --marquee-item-offset: max(
-      calc(var(--marquee-item-width)* var(--marquee-items)),
-      calc(100% + var(--marquee-item-width))
-    );
+    /* 3. Remove max() as it fails in older WebKit calc() functions */
+    --marquee-item-offset: calc(var(--marquee-item-width) * var(--marquee-items));
     --marquee-delay: calc(var(--marquee-duration) / var(--marquee-items) * (var(--marquee-items) - var(--marquee-item-index)) * -1);
+    
     position: absolute;
-    inset-inline-start: var(--marquee-item-offset);
-    transform: translateX(-50%);
+    /* 4. Replace inset-inline-start with left */
+    left: var(--marquee-item-offset);
+    
+    /* 5. Force GPU hardware acceleration for smooth scrolling on older chips */
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    
+    -webkit-animation: go linear var(--marquee-duration) var(--marquee-delay, 0s) infinite;
     animation: go linear var(--marquee-duration) var(--marquee-delay, 0s) infinite;
 }
 
@@ -341,19 +357,25 @@ p.margin-bottom-24px{
     --marquee-duration: 36s;
     --marquee-items: 4;
 }
-@keyframes go {
+
+/* 6. Use 'left' in keyframes and add WebKit prefix */
+@-webkit-keyframes go {
     to {
-      inset-inline-start: calc(var(--marquee-item-width) * -1);
+        left: calc(var(--marquee-item-width) * -1);
     }
 }
+@keyframes go {
+    to {
+        left: calc(var(--marquee-item-width) * -1);
+    }
+}
+
 .marquee--8 .marquee__item:nth-of-type(1) {
     --marquee-item-index: 1;
-  }
-  
+}
 .marquee--8 .marquee__item:nth-of-type(2) {
     --marquee-item-index: 2;
 }
-  
 .marquee--8 .marquee__item:nth-of-type(3) {
     --marquee-item-index: 3;
 }
@@ -361,15 +383,8 @@ p.margin-bottom-24px{
     --marquee-item-index: 4;
 }
 
-.marquee__item.reverse{
-    --marquee-item-offset: max(
-      calc(var(--marquee-item-width) * var(--marquee-items)),
-      calc(100% + var(--marquee-item-width))
-    );
-    --marquee-delay: calc(var(--marquee-duration) / var(--marquee-items) * (var(--marquee-items) - var(--marquee-item-index)) * -1);
-    position: absolute;
-    inset-inline-start: var(--marquee-item-offset);
-    transform: translateX(-50%);
+.marquee__item.reverse {
+    -webkit-animation: go linear var(--marquee-duration) var(--marquee-delay, 0s) infinite reverse;
     animation: go linear var(--marquee-duration) var(--marquee-delay, 0s) infinite reverse;
 }
 
