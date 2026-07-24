@@ -13,12 +13,15 @@
 		About=關於
 		Blogs=部落格
 		Portfolio=作品集
+		Commission=委託
 		Pricing=價目表
 		Procedure=委託流程
 		Commission Types=委託類型
 		Form=委託表單
 		About=關於
 		Illustration=插圖
+		Personal=個人
+		Gallery=精選
 
 		All Right Reserved=版權所有
 	`);
@@ -26,12 +29,15 @@
 		About=紹介
 		Blogs=ブログ
 		Portfolio=ギャラリー
+		Commission=委託
 		Pricing=価格
 		Procedure=委託の流れ
 		Commission Types=委託の種類
 		Form=委託フォーム
 		About=紹介
 		Illustration=絵画
+		Personal=個人
+		Gallery=精選
 			
 		All Right Reserved=著作権所有
 	`);

@@ -322,7 +322,7 @@ p.margin-bottom-24px{
     
     /* 2. Add WebKit prefix and use legacy color syntax (rgba instead of space-separated hsl) */
     -webkit-mask-image: -webkit-linear-gradient(
-        left,
+        to right,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 1) 10%,
         rgba(0, 0, 0, 1) 90%,
@@ -338,8 +338,8 @@ p.margin-bottom-24px{
 }
 
 .marquee__item {
-    /* 3. Remove max() as it fails in older WebKit calc() functions */
-    --marquee-item-offset: calc(var(--marquee-item-width) * var(--marquee-items));
+    /* 3. space between marquee image */
+    --marquee-item-offset: max(calc(var(--marquee-item-width)* var(--marquee-items)),calc(100% + var(--marquee-item-width)));
     --marquee-delay: calc(var(--marquee-duration) / var(--marquee-items) * (var(--marquee-items) - var(--marquee-item-index)) * -1);
     
     position: absolute;
@@ -358,7 +358,7 @@ p.margin-bottom-24px{
     --marquee-item-width: 450px;
     --marquee-item-height: 280px;
     --marquee-duration: 36s;
-    --marquee-items: 4;
+    --marquee-items: 5;
 }
 
 /* 6. Use 'left' in keyframes and add WebKit prefix */
