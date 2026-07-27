@@ -1420,7 +1420,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-dropdown-link.w--current {
-  color: #0082f3;
+  color: #aaa22c;
 }
 
 .w-dropdown-link:focus {
@@ -1872,7 +1872,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-nav-link.w--current {
-  color: #0082f3;
+  color: #aaa22c;
 }
 
 .w-nav-menu {
