@@ -296,11 +296,9 @@ p.margin-bottom-24px{
     right:5%;
     bottom:0%;
 }
-.popupzone:hover{
-    .popup{
-        bottom:-80px;
-        transition: ease-out 0.5s;
-    }
+.popupzone:hover .popup{
+    bottom:-80px;
+    transition: ease-out 0.5s;
 }
 .popup{
     width: 200px;

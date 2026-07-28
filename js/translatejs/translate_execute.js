@@ -105,6 +105,11 @@
 		Icon=頭像
 		Surprise Pack=驚喜包
 		Illustration=插畫
+		Character Art=立繪
+		Addons=附加項目
+		Variation (Pose or Expressions)=差分（姿勢或表情）
+		Rush Commissions=加急委託
+		Commission Scope=委託範圍
 		Terms of use=使用規範
 		Read before commission=委託前請先閱讀
 		Private Commision=私人委託
@@ -119,6 +124,7 @@
 		Icon=アイコン
 		Surprise Pack=サプライズパッケージ
 		Illustration=イラスト
+		Commission Scope=委託範囲
 		Terms of use=利用規約
 		Read before commission=委託前にお読みください
 		Private Commision=私人委託
