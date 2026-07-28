@@ -69,6 +69,27 @@
     <script type="module">
         import PhotoSwipeLightbox from '../js/photoswipe/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
+            gallery: '#slidesCA',
+            children: 'a',
+            showAnimationDuration: 0,
+            hideAnimationDuration: 0,
+            pswpModule: () => import('../js/photoswipe/photoswipe.esm.js')
+        });
+        lightbox.on('beforeOpen', () => {
+            stopAutoSlide();
+            lenis.stop();
+            // photoswipe starts to open
+        });
+        lightbox.on('close', () => {
+            // PhotoSwipe starts to close, unbind most events here
+            lenis.start();
+            startAutoSlide();
+        });
+        lightbox.init();
+    </script>
+    <script type="module">
+        import PhotoSwipeLightbox from '../js/photoswipe/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
             gallery: '#slides3',
             children: 'a',
             showAnimationDuration: 0,
@@ -131,8 +152,8 @@
                     <img class="thumbnail" src="../images/commission_example/d22.png" alt="Thumbnail 3" onclick="currentSlide('slider1', 2)">
                 </div>
                    
-                 <div class="margin-bottom-24px"></div>
-                 <div class="hero-wrapper-two">
+                <div class="margin-bottom-24px"></div>
+                <div class="hero-wrapper-two">
                     <h2>Icon</h2>
                     <!--<p class="margin-bottom-24px">Feature Not Yet Enabled</p>-->
                 </div>
@@ -146,7 +167,7 @@
                 </div>
                 <div class="margin-bottom-72px"></div>
                 <div>
-                    <p class="margin-bottom-24px">*Can specify pose and emotions</p>
+                    <p class="margin-bottom-24px">*Can specify pose and facial expressions</p>
                 </div>
             </div>
             <div class="modal" id="modal">
@@ -160,6 +181,7 @@
             </div>
             <div class="margin-bottom-280px"></div>
         </section>
+        <!--Surprise Pack-->
         <section class="commititem fadein-blk">
             <div class="slider" id="slider2">
                 <div class="sliderimgcontainer">
@@ -191,20 +213,74 @@
                     <img class="thumbnail" src="../images/commission_example/d07.png" alt="Thumbnail 5" onclick="currentSlide('slider2', 1)">
                     <img class="thumbnail" src="../images/commission_example/d14.png" alt="Thumbnail 6" onclick="currentSlide('slider2', 2)">
                 </div>
+            </div>
+            <div class="margin-bottom-24px"></div>
+            <div class="hero-wrapper-two">
+                <h2>Surprise Pack</h2>
+                <p class="margin-bottom-24px" style="color: rgb(228, 90, 90);">Not available currently</p>
+            </div>
+            <div>
+                <h3>Price</h3>
                 <div class="margin-bottom-24px"></div>
-                <div class="hero-wrapper-two">
-                    <h2>Surprise Pack</h2>
-                    <p class="margin-bottom-24px" style="color: rgb(228, 90, 90);">Not available currently</p>
-                </div>
-                <div>
-                    <h3>Price</h3>
-                    <div class="margin-bottom-24px"></div>
-                    <ul>
-                        <li><p class="margin-bottom-24px">Full Body: HKD 175+</p></li>
-                        <li><p class="margin-bottom-24px">Upper Body: HKD 125+</p></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li><p class="margin-bottom-24px">Full Body: HKD 175+</p></li>
+                    <li><p class="margin-bottom-24px">Upper Body: HKD 125+</p></li>
+                </ul>
+            </div>
             <div class="margin-bottom-280px"></div>
+        </section>
+        <!--Character Art-->
+        <section class="commititem fadein-blk">
+            <div class="slider" id="sliderCA">
+                <div class="sliderimgcontainer">
+                    <button class="arrow arrow-left" onclick="showSlide('sliderCA', currentIndexes['sliderCA'] - 1)">&#10094;</button>
+                    <div class="slides" id="slidesCA">
+                        <div class="slide">
+                            <a href="../images/Drawings_Thumbnail.jpg"
+                            data-pswp-width="1920" 
+                            data-pswp-height="1080" 
+                            target="_blank">
+                            <img src="../images/Drawings_Thumbnail.jpg" alt="Image 4"></a></div>
+                        <div class="slide">
+                            <a href="../images/commission_example/d07.png"
+                            data-pswp-width="7016" 
+                            data-pswp-height="4961" 
+                            target="_blank">
+                            <img src="../images/commission_example/d07.png" alt="Image 5"></a></div>
+                        <div class="slide">
+                            <a href="../images/commission_example/d14.png"
+                            data-pswp-width="1080" 
+                            data-pswp-height="1248" 
+                            target="_blank">
+                            <img src="../images/commission_example/d14.png" alt="Image 6"></a></div>
+                    </div>
+                    <button class="arrow arrow-right" onclick="showSlide('sliderCA', currentIndexes['sliderCA'] + 1)">&#10095;</button>
+                </div>
+                <div class="thumbnails">
+                    <img class="thumbnail active" src="../images/Drawings_Thumbnail.jpg" alt="Thumbnail 4" onclick="currentSlide('sliderCA', 0)">
+                    <img class="thumbnail" src="../images/commission_example/d07.png" alt="Thumbnail 5" onclick="currentSlide('sliderCA', 1)">
+                    <img class="thumbnail" src="../images/commission_example/d14.png" alt="Thumbnail 6" onclick="currentSlide('sliderCA', 2)">
+                </div>
+            </div>
+            <div class="margin-bottom-24px"></div>
+            <div class="hero-wrapper-two">
+                <h2>Character Art</h2>
+            </div>
+            <div>
+                <h3>Price</h3>
+                <div class="margin-bottom-24px"></div>
+                <ul>
+                    <li><p class="margin-bottom-24px">Full Body: HKD 175+</p></li>
+                    <li><p class="margin-bottom-24px">Upper Body: HKD 125+</p></li>
+                </ul>
+            </div>
+            <div class="margin-bottom-72px"></div>
+            <div>
+                <p class="margin-bottom-24px">*With simple background</p>
+                <p class="margin-bottom-24px">*can specify pose</p>
+            </div>
+            <div class="margin-bottom-280px"></div>
+            
         </section>
         <section class="commititem fadein-blk">
             <div class="slider" id="slider3">
@@ -260,6 +336,53 @@
             <!--<img class="center" src="../images/favicon.png" height="200px" width="200px">-->
             
             <div class="margin-bottom-280px"></div>
+            <div class="commititem fadein-blk">
+                <div class="hero-wrapper-two">
+                    <h2>Addons</h2>
+                    <!--<p class="margin-bottom-24px">Feature Not Yet Enabled</p>-->
+                </div>
+                <!--<img class="center" src="../images/favicon.png" height="200px" width="200px">-->
+                <div class="margin-bottom-24px">
+                    <h3>Addditional Character</h3>
+                    <div class="margin-bottom-24px"></div>
+                    <ul>
+                        <li><p class="margin-bottom-24px">HKD 50/ 1 character</p></li>
+                    </ul>
+                </div>
+                <div class="margin-bottom-24px">
+                    <h3>Commercial Use</h3>
+                    <div class="margin-bottom-24px"></div>
+                    <ul>
+                        <li><p class="margin-bottom-24px">Commission total price X 1.5</p></li>
+                    </ul>
+                </div>
+                <div class="margin-bottom-24px">
+                    <h3>Variation (Pose or Expressions)</h3>
+                    <div class="margin-bottom-24px"></div>
+                    <ul>
+                        <li><p class="margin-bottom-24px">HKD 60</p></li>
+                    </ul>
+                </div>
+                <div class="margin-bottom-24px">
+                    <h3>Remove Background</h3>
+                    <div class="margin-bottom-24px"></div>
+                    <ul>
+                        <li><p class="margin-bottom-24px">Free</p></li>
+                    </ul>
+                </div>
+                <div class="margin-bottom-24px">
+                    <h3>Rush Commissions</h3>
+                    <div class="margin-bottom-24px"></div>
+                    <ul>
+                        <li><p class="margin-bottom-24px">Depends on urgency</p></li>
+                    </ul>
+                </div>
+                <div class="margin-bottom-72px"></div>
+                
+                <div>
+                    <p class="margin-bottom-24px"></p>
+                </div>
+            </div>
         </section>
         
     </section>
