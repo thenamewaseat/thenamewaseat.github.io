@@ -15,10 +15,9 @@
 	grid-template-columns: repeat(2, minmax(200px,1fr)) ;
     /*grid-auto-rows: 350px;*/
     grid-gap: 10px;
-    
-    img{
-        transition: 1s ease;
-    }
+}
+.gridwrapper img{
+    transition: 1s ease;
 }
 .gridgp > *,
 .gridgp::before {
@@ -56,36 +55,33 @@
 }
 .gridwrapper a {
     position: relative;
-    img{
-        aspect-ratio: 16/9.5;
-        top: 0;
-        /*left: 50%;*/
-        object-fit: cover;
-        width: 100%;
-        height:auto;
-        cursor: pointer;
-    }
+}
+.gridwrapper a img{
+    aspect-ratio: 16/9.5;
+    top: 0;
+    /*left: 50%;*/
+    object-fit: cover;
+    width: 100%;
+    height:auto;
+    cursor: pointer;
 	
 }
 .gridgp:has(a:hover),.gridgp:has(.gridtext:hover){
     cursor: url('../images/cursor_auto.png'),pointer;
-    img{
-        cursor: url('../images/cursor_auto.png'),pointer;
-        transition: 1s ease;
-        filter: brightness(70%);
-        transform:scale(1.1);
-        overflow: hidden;
-    
-    }
+}
+.gridgp:has(a:hover) img,.gridgp:has(.gridtext:hover) img{
+    transition: 1s ease;
+    filter: brightness(70%);
+    transform:scale(1.1);
+    overflow: hidden;
 	/*transform: scale(0.9);*/
-    
-    .gridtext{
-        transition: 1s ease;
-        z-index: 3;
-        opacity: 1;
-        place-self: center;
-        width: 100%;
-    }
+}
+.gridgp:has(a:hover) .gridtext,.gridgp:has(.gridtext:hover) .gridtext{
+    transition: 1s ease;
+    z-index: 3;
+    opacity: 1;
+    place-self: center;
+    width: 100%;
 }
 /*folly artist*/
 .bgbanner{

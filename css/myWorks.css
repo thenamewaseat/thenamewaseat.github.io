@@ -46,48 +46,34 @@
     color:white;
     text-decoration: none;
 }
+
 #f1{
     background: black url("../images/shoot.jpg");
-    background-size: cover;
-    background-position: center;
-    transition:ease;
-    transition-duration: 0.5s;
 }
 #f2{
     background: black url("../images/Drawings_Thumbnail2.jpg");
-    background-size: cover;
-    background-position: center;
-    transition:ease;
-    transition-duration: 0.5s;
 }
-
 #f3{
     background: black url("../images/games_thumbnail_2.png");
-    background-size: cover;
-    background-position: center;
-    transition:ease;
-    transition-duration: 0.5s;
 }
 #f4{
     background: black url("../images/installation_thumbnail.jpg");
-    background-size: cover;
-    background-position: center;
-    transition:ease;
-    transition-duration: 0.5s;
 }
 #f5{
     background: black url("../images/others_thumbnail.png");
+}
+#f6{
+    background: black url("../images/ui_thumbnail.jpg");
+}
+#f1,#f2,#f3,#f4,#f5,#f6{
     background-size: cover;
     background-position: center;
     transition:ease;
     transition-duration: 0.5s;
 }
-#f6{
-    background: black url("../images/ui_thumbnail.jpg");
-    background-size: cover;
-    background-position: center;
-    transition:ease;
-    transition-duration: 0.5s;
+#f1:hover #g1,#f2:hover #g2,#f3:hover #g3,#f4:hover #g4,#f5:hover #g5,#f6:hover #g6{
+    backdrop-filter:blur(0px);
+    -webkit-backdrop-filter: blur(0px);
 }
 .Tgrid{
     background-color:rgba(0,0,0,0.4);
@@ -104,16 +90,12 @@
     /*grid-auto-rows: 350px;*/
     grid-gap: 10px;
 }
-.gridwrapper1 a {
-	
-    img{
-        object-fit: cover;
-        width: 100%;
-        height:100%;
-        cursor: pointer;
-	    transition: 1s ease;
-    }
-	
+.gridwrapper1 a img{
+    object-fit: cover;
+    width: 100%;
+    height:100%;
+    cursor: pointer;
+	transition: 1s ease;
 }
 .gridwrapper1 img:hover {
 	transform: scale(0.9);
@@ -121,82 +103,30 @@
 }
 
 @media screen and (min-width: 767px) {
-    #f1:hover{
+    #f1:hover,#f2:hover,#f3:hover,#f4:hover,#f5:hover,#f6:hover{
         width:65%;
         transition:ease;
         transition-duration: 0.5s;
-        #g1{
-            backdrop-filter:blur(0px);
-            -webkit-backdrop-filter: blur(0px);
-        }
     }
     #f1:hover ~a{
         width:35%;
         transition-duration: 0.5s;
     }
-    #f2:hover{
-        width:65%;
-        transition:ease;
-        transition-duration: 0.5s;
-        #g2{
-            backdrop-filter:blur(0px);
-            -webkit-backdrop-filter: blur(0px);
-        }
-        
-    }
     #f1:has(+#f2:hover){
         width:35%;
         transition-duration: 0.5s;
-    }
-    #f3:hover{
-        width:65%;
-        transition:ease;
-        transition-duration: 0.5s;
-        #g3{
-            backdrop-filter:blur(0px);
-            -webkit-backdrop-filter: blur(0px);
-        }
     }
     #f3:hover ~a{
         width:35%;
         transition-duration: 0.5s;
     }
-    #f4:hover{
-        width:65%;
-        transition:ease;
-        transition-duration: 0.5s;
-        #g4{
-            backdrop-filter:blur(0px);
-            -webkit-backdrop-filter: blur(0px);
-        }
-        
-    }
     #f3:has(+#f4:hover){
         width:35%;
         transition-duration: 0.5s;
     }
-    #f6:hover{
-        width:65%;
-        transition:ease;
-        transition-duration: 0.5s;
-        #g6{
-            backdrop-filter:blur(0px);
-            -webkit-backdrop-filter: blur(0px);
-        }
-    }
     #f6:hover ~a{
         width:35%;
         transition-duration: 0.5s;
-    }
-    #f5:hover{
-        width:65%;
-        transition:ease;
-        transition-duration: 0.5s;
-        #g5{
-            backdrop-filter:blur(0px);
-            -webkit-backdrop-filter: blur(0px);
-        }
-        
     }
     #f6:has(+#f5:hover){
         width:35%;
@@ -216,67 +146,18 @@
         height:200px;
         line-height:200px;
     }
-    #f1:hover{
+    #f1:hover,#f2:hover,#f3:hover,#f4:hover,#f5:hover,#f6:hover{
         transition:ease;
         transition-duration: 0.5s;
-        ~a{
-            transition-duration: 0.5s;
-        }#g1{
-            backdrop-filter:blur(0px);
-            -webkit-backdrop-filter: blur(0px);
-        }
     }
-    #f2:hover{
-        transition:ease;
+    #f1:hover ~a,#f2:hover ~a, #f3:hover ~a, #f4:hover ~a, #f5:hover ~a, #f6:hover ~a{
         transition-duration: 0.5s;
-        #g2{
-            backdrop-filter:blur(0px);
-            -webkit-backdrop-filter: blur(0px);
-        }
-        
     }
     #f1:has(+#f2:hover){
         transition-duration: 0.5s;
     }
-    #f3:hover{
-        transition:ease;
-        transition-duration: 0.5s;
-        ~a{
-            transition-duration: 0.5s;
-        }#g3{
-            backdrop-filter:blur(0px);
-            -webkit-backdrop-filter: blur(0px);
-        }
-    }
-    #f4:hover{
-        transition:ease;
-        transition-duration: 0.5s;
-        #g4{
-            backdrop-filter:blur(0px);
-            -webkit-backdrop-filter: blur(0px);
-        }
-        
-    }
     #f3:has(+#f4:hover){
         transition-duration: 0.5s;
-    }
-    #f5:hover{
-        #g5{
-            backdrop-filter:blur(0px);
-            -webkit-backdrop-filter: blur(0px);
-            transition:ease;
-            transition-duration: 0.5s;
-        }
-        
-    }
-    #f6:hover{
-        #g6{
-            backdrop-filter:blur(0px);
-            -webkit-backdrop-filter: blur(0px);
-            transition:ease;
-            transition-duration: 0.5s;
-        }
-        
     }
     #f6:has(+#f5:hover){
         transition-duration: 0.5s;
