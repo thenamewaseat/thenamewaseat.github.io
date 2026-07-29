@@ -203,6 +203,9 @@ a:hover{
     width: 0;
     height: 0;
 }
+.margin-bottom-48px{
+    margin-bottom: 48px;
+}
 .margin-bottom-72px{
     margin-bottom: 72px;
 }
@@ -269,7 +272,7 @@ p.rem1{
     color:#ffffff;
     text-shadow: 2px 2px 2px black;
 }
-p.margin-bottom-24px{
+p.margin-bottom-24px, p.margin-bottom-48px{
     font-size: 1.5rem;
     line-height: 1.2;
 }
@@ -416,7 +419,7 @@ p.margin-bottom-24px{
         font-size: 15vw;
         padding-bottom: 5vh;
     }
-    p.margin-bottom-24px, p.rem1{
+    p.margin-bottom-24px, p.rem1, p.margin-bottom-48px{
         font-size: 1.1rem;
         line-height: 1.2;
     }
