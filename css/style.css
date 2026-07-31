@@ -12,7 +12,7 @@
 :root{
     --d-font:#f7f7f7;
     --d-bg:#1f1f1f;
-    --d-header:rgba(41, 41, 41, 0.9);
+    --d-header:rgba(41, 41, 41, 0.85);
     --d-blocks:rgba(29, 29, 29, 0.897);
     --black:#000;
 }
@@ -93,34 +93,6 @@ select option{
     select option{
         background-color: #000000;
         color: #ffffff;
-    }
-}
-body.dark-mode {
-    background-color: #121212; /* Dark mode background */
-    color: #ffffff; /* Dark mode text */
-    
-}
-
-body.dark-mode .header{
-    background-color: rgba(0, 0, 0, 0.7);; /* Dark mode background */
-     /* Dark mode text */
-    .nav-link-2,#curlang{
-        color: #ffffff;
-    }
-    .w-dropdown-btn, .w-dropdown-toggle, .w-dropdown-link {
-        color: #ffffff
-    }
-    .nav-dropdown-list-2 {
-        background-color: #000;
-
-    }
-    #currlanglink ,.targetlang{
-        color:#ffffff
-    }
-    @media screen and (max-width: 991px) {
-        .nav-menu {
-            background-color: #000;
-        }
     }
 }
 .toggle-button {
@@ -219,11 +191,11 @@ p.rem1{
     font-size: 1.5rem;
 }
 .header{
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.85);
     transition: box-shadow 0.3s ease;
     transition: transform 0.3s ease;
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(0.8rem);
+    -webkit-backdrop-filter: blur(0.8rem);
     z-index: 10;
     position: sticky;
     top:0px;
@@ -495,15 +467,16 @@ p.margin-bottom-24px, p.margin-bottom-48px{
 .wrapper .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
+.wrapper :hover .iconfab,
+.wrapper :hover .tooltip .iconfab{
+    filter: invert(100%);
+}
 
 .wrapper .pixiv:hover,
 .wrapper .pixiv:hover .tooltip,
 .wrapper .pixiv:hover .tooltip::before {
     background-color: #009dff;
     color: #ffffff;
-    .iconfab{
-        filter:invert(100%)
-    }
 }
 
 .wrapper .twitter:hover,
@@ -511,9 +484,6 @@ p.margin-bottom-24px, p.margin-bottom-48px{
 .wrapper .twitter:hover .tooltip::before {
     background-color: #46c1f6;
     color: #ffffff;
-    .iconfab{
-        filter:invert(100%)
-    }
 }
 
 .wrapper .instagram:hover,
@@ -521,9 +491,6 @@ p.margin-bottom-24px, p.margin-bottom-48px{
 .wrapper .instagram:hover .tooltip::before {
     background-color: #e1306c;
     color: #ffffff;
-    .iconfab{
-        filter:invert(100%)
-    }
 }
 
 .wrapper .github:hover,
@@ -531,9 +498,6 @@ p.margin-bottom-24px, p.margin-bottom-48px{
 .wrapper .github:hover .tooltip::before {
     background-color: #333333;
     color: #ffffff;
-    .iconfab{
-        filter:invert(100%)
-    }
 }
 
 .wrapper .youtube:hover,
@@ -541,9 +505,6 @@ p.margin-bottom-24px, p.margin-bottom-48px{
 .wrapper .youtube:hover .tooltip::before {
     background-color: #de463b;
     color: #ffffff;
-    .iconfab{
-        filter:invert(100%)
-    }
 }
 
 footer{
