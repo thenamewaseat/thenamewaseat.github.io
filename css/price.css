@@ -13,11 +13,11 @@
 }
 
 /* Flattened nesting for slider3 */
-#slider3 .slide img {
-    /* aspect-ratio isn't supported on old iOS, so we leave object-fit as the primary controller */
+/*#slider3 .slide img {
+     aspect-ratio isn't supported on old iOS, so we leave object-fit as the primary controller 
     aspect-ratio: 16/9;
     object-fit: contain;
-}
+}*/
 
 .sliderimgcontainer {
     background-color: #e6e6e6;
@@ -178,16 +178,20 @@
         width: 100%;
         max-width: 400px;
     }
-    #slider1 .slide{
-        img{
-            max-height: 185px;
-            object-fit: contain;
-        }
+    .slider .slide img {
+        aspect-ratio: 4/3;
+        object-fit: contain;
     }
-    #slider3 .slide{
-        img{
-            aspect-ratio: 16/9;
-            object-fit: contain;
-        }
+    /*#slider1 .slide img{
+        max-height: 185px;
+        object-fit: contain;
     }
+    #slider3 .slide img{
+        aspect-ratio: 16/9;
+        object-fit: contain;
+    }
+    #sliderCA .slide img{
+        aspect-ratio: 16/9;
+        object-fit: contain;
+    }*/
 }
