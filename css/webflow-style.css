@@ -2591,7 +2591,7 @@ body {
     color: #fff;
     background-color: #a6b1bf;
   }
-
+  
   .container-2 {
     max-width: 728px;
   }
@@ -2689,6 +2689,10 @@ body {
 
   .nav-dropdown-list-2.shadow-three.mobile-shadow-hide {
     box-shadow: none;
+  }
+
+  .nav-dropdown-link-2{
+    text-align:center;
   }
 
   .mobile-margin-top-11 {
