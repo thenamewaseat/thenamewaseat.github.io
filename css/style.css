@@ -236,9 +236,13 @@ p.rem1{
 .font1{
     color:#ffffff;
     text-shadow: 2px 2px 2px black;
-    font-size: 7rem;
+    font-size: 6rem;
     /*font-family: MBForeverRaw;*/
     padding-bottom: 30px;
+}
+.landing{
+    text-align: left;
+    align-items: flex-start !important;
 }
 .imgtop p{
     color:#ffffff;
@@ -388,8 +392,8 @@ p.margin-bottom-24px, p.margin-bottom-48px{
         overflow:visible;
         display:block;
         width: 100%;
-        font-size: 15vw;
-        padding-bottom: 5vh;
+        font-size: 4rem;
+        padding-bottom: 0px;
     }
     p.margin-bottom-24px, p.rem1, p.margin-bottom-48px{
         font-size: 1.1rem;
