@@ -392,8 +392,9 @@ p.margin-bottom-24px, p.margin-bottom-48px{
         overflow:visible;
         display:block;
         width: 100%;
-        font-size: 4rem;
+        font-size: 12vw;
         padding-bottom: 0px;
+        line-height: 1;
     }
     p.margin-bottom-24px, p.rem1, p.margin-bottom-48px{
         font-size: 1.1rem;
