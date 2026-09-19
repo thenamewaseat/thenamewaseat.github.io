@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Break Particle Background</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="scroll-section">
+    <h1>Scroll Down to Break the Image</h1>
+  </div>
+
+  <!-- The canvas sits fixed behind this section -->
+  <div class="break-section" id="trigger-section">
+    <canvas id="particleCanvas"></canvas>
+    <div class="content-overlay">
+      <h2>The Image Breaks Into Particles</h2>
+    </div>
+  </div>
+
+  <div class="scroll-section">
+    <h1>Keep Scrolling...</h1>
+  </div>
+
+  <script src="../js/breakimg.js"></script>
+</body>
+</html>
