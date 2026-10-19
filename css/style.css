@@ -19,7 +19,10 @@
 .margin-bottom-24px.left{
     text-align: left;
 }
-
+.listsubitem{
+    font-size: 1.2rem !important;
+    color: #a8a8a8;
+}
 #translateSelectLanguage{
     border: none;
     background-color: transparent;
@@ -411,6 +414,10 @@ progress[value]::-webkit-progress-value {
 }
 
 @media screen and (max-width: 767px){
+    .listsubitem{
+    font-size: 1rem !important;
+    color: #a8a8a8;
+    }
     .right{
         text-align: unset;
     }

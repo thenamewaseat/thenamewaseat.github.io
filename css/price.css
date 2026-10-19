@@ -252,3 +252,7 @@
 .comm-list:last-child{
     margin-left: auto;
 }
+.listsubitem{
+    font-size: 1.2rem !important;
+    color: #a8a8a8;
+}
