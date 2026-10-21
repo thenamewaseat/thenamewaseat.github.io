@@ -194,7 +194,7 @@ p.rem1{
     font-size: 1.5rem;
 }
 .header{
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(252, 251, 245, 0.85);
     transition: box-shadow 0.3s ease;
     transition: transform 0.3s ease;
     backdrop-filter: blur(0.8rem);
@@ -586,7 +586,7 @@ html.lenis {
   /*footer*/
   .footer-clean {
     padding:50px 0;
-    background-color:#eeeeee;
+    background-color:#e6e5dc;
     color:#4b4c4d;
   }
   
